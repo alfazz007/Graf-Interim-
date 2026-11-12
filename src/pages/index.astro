@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import Home from '../components/Home.astro';
+import { routes } from '../lib/i18n';
+---
+<Base
+  lang="de"
+  loader
+  title="Interim COO & Werksleiter für produzierende Unternehmen | Graf Interim"
+  description="Danny Graf, MBA – Interim COO, Werksleiter und Turnaround-Manager für produzierende Unternehmen im DACH-Raum. 30+ Jahre Erfahrung, 35 Mio. € Einsparungen."
+  alt={routes.home}
+>
+  <Home lang="de" />
+</Base>

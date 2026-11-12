@@ -1,0 +1,182 @@
+{
+  "id": "allinone",
+  "template": "service",
+  "de": {
+    "slug": "/all-in-one-interim-management/",
+    "navTitle": "All-in-One",
+    "seoTitle": "All-in-One Interim Management aus einer Hand | Graf Interim",
+    "seoDescription": "Interim Management aus einer Hand: Spezialisten für COO/Werksleitung, Supply Chain, Projekte, Finance, Einkauf, Sales und HR – Umsetzer statt Berater.",
+    "eyebrow": "Leistung · Team",
+    "title": "All-in-One Interim Management",
+    "titleAccent": "aus einer Hand",
+    "intro": "Umsetzer statt Berater: Für jeden Engpass in Ihrem Unternehmen bieten wir den passenden Spezialisten.",
+    "highlights": ["Umsetzer statt Berater", "Operations", "Prozesse & Digitalisierung", "Führung & Kultur"],
+    "sections": [
+      {
+        "type": "list",
+        "heading": "Für jeden Engpass einen Spezialisten",
+        "intro": "Wir steigern die Effizienz Ihres Unternehmens und unterstützen Ihre Mitarbeiter – in diesen Bereichen:",
+        "items": [
+          "COO / Plant Management",
+          "Supply Chain",
+          "Project Management",
+          "Finance",
+          "Procurement",
+          "Sales & HR"
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "Das Team",
+        "items": [
+          {
+            "title": "Danny Graf, MBA",
+            "text": "Interim COO und Werksleiter, Operations-Spezialist – Kostensenkung, Reorganisation und Optimierung des Betriebsergebnisses."
+          },
+          {
+            "title": "Heike Grigat",
+            "text": "Interim Managerin für Prozessoptimierung, Digitalisierung und Projektmanagement – mit Fokus auf Einkauf, Logistik und Verwaltung."
+          },
+          {
+            "title": "Renate Phoenix Mahr",
+            "text": "Begleitung von Veränderungsprozessen – Kultur-, Führungs- und Team-Entwicklung sowie Mitarbeiterqualifizierung."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Danny Graf, MBA",
+        "intro": "Interim Werksleitungen und Interim COO – Spezialist für Operations. [Mehr über mich](/ueber-mich/)",
+        "items": [
+          "**Aufgabenfelder:** Kostensenkung, Reorganisation und Optimierung des Betriebsergebnisses – u. a. Sales & Operations Planning, Optimierung aller Prozesse entlang der kompletten Supply Chain und Führung nach Kennzahlen",
+          "**Einsatzumfeld:** Konzerne und Familienunternehmen; Einzel- und Kleinserienfertigung sowie Taktfertigung",
+          "**Interim-Stationen:** Interim CEO, COO, Head of Operations und mehrere Werksleitungen – Kostensenkungen von ca. 40 Mio. € zum jeweiligen Mandatsende, Tendenz steigend",
+          "**Unternehmensgrößen:** bis ca. 1 Mrd. Jahresumsatz",
+          "**Festanstellung:** Werksleitungen, Niederlassungsleitungen und Produktionsleitungen",
+          "**Ausbildung:** MBA, Lean Six Sigma Black Belt, Handwerksmeister im Maschinenbau; Projektmanager, Change Manager, Scrum Master, FMEA-Moderator"
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Heike Grigat",
+        "intro": "Interim Managerin für Prozessoptimierung, Digitalisierung und Projektmanagement.",
+        "items": [
+          "**Prozessoptimierung & Digitalisierung** – insbesondere in Einkauf, Logistik und Verwaltung",
+          "**Führung & Team-Entwicklung** – Klarheit schaffen, Verantwortung fördern",
+          "**Projektmanagement** – klassisch und agil, praxisorientiert umgesetzt",
+          "**Veränderungsprozesse begleiten** – Analyse, Strukturierung und Umsetzung",
+          "**Erfahrung:** langjährig in Vakanzüberbrückung und Prozessneugestaltung; Einsätze in Industrieunternehmen mit Fokus auf Einkauf, Logistik und administrative Abläufe; spezialisiert auf Change-Prozesse im operativen Tagesgeschäft",
+          "**Qualifikationen:** Six Sigma Black Belt, Managerin für angewandte KI-Transformation, Business-Transformation-Expertin, Projektmanagerin (klassisch & agil), Change Managerin, Fachkraft für Kommunikation und Zusammenarbeit"
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Renate Phoenix Mahr",
+        "intro": "Expertin für Kultur-, Führungs- und Team-Entwicklung.",
+        "items": [
+          "**Begleitung von Veränderungsprozessen** – Kultur-Entwicklung",
+          "**Führen, Leiten, Lenken** – Führungs-Entwicklung",
+          "**Mitarbeiter in Gruppen und Teams** – Team-Entwicklung, Mitarbeiter-Qualifizierung und -Entwicklung",
+          "**Berufliche Stationen:** Leiterin Personal-Akquise, Qualifizierung und Personaleinsatzplanung (Campus Consult Projektmanagement GmbH); Head of Inhouse Training Soft Skills (Kabel Deutschland GmbH)",
+          "**Lehre:** Dozentin für Leadership und Management an mehreren deutschen Hochschulen sowie im MBA-Studium Unternehmensführung (Hochschule Biberach)",
+          "**Ausbildung:** systemische Beratung und systemisches Coaching bei Dr. Gunther Schmidt (Milton-Erickson-Institut Heidelberg); Veränderungsprozesse und Kulturentwicklung mit dem Graves-Value-System (9Levels)",
+          "**Weitere Qualifikationen:** Persönlichkeitsentwicklung nach C. G. Jung mit internationaler Lizenz für den Myers Briggs Type Indicator (MBTI); Lizenz MBTI-Plus nach Richard Bents und Rainer Blank (future systems); EMDR im Coaching bei Blockade-Situationen (Besser-Sigmund-Institut); Assessment-Center-Begleitung (Bildungskooperation Mittelfranken GmbH)"
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Den passenden Spezialisten für Ihren Engpass finden",
+        "text": "Schildern Sie mir Ihre Situation – gemeinsam klären wir, wer aus dem Team Sie am wirkungsvollsten unterstützt."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/all-in-one-interim-management/",
+    "navTitle": "All-in-one",
+    "seoTitle": "All-in-One Interim Management | Graf Interim",
+    "seoDescription": "Interim management from a single source: specialists for COO/plant management, supply chain, projects, finance, procurement, sales and HR – doers, not advisers.",
+    "eyebrow": "Service · Team",
+    "title": "All-in-one interim management",
+    "titleAccent": "from a single source",
+    "intro": "Doers, not advisers: for every bottleneck in your company, we provide the right specialist.",
+    "highlights": ["Doers, not advisers", "Operations", "Processes & digitalisation", "Leadership & culture"],
+    "sections": [
+      {
+        "type": "list",
+        "heading": "A specialist for every bottleneck",
+        "intro": "We increase your company’s efficiency and support your people – in these areas:",
+        "items": [
+          "COO / plant management",
+          "Supply chain",
+          "Project management",
+          "Finance",
+          "Procurement",
+          "Sales & HR"
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "The team",
+        "items": [
+          {
+            "title": "Danny Graf, MBA",
+            "text": "Interim COO and plant manager, operations specialist – cost reduction, reorganisation and improving operating results."
+          },
+          {
+            "title": "Heike Grigat",
+            "text": "Interim manager for process optimisation, digitalisation and project management – with a focus on procurement, logistics and administration."
+          },
+          {
+            "title": "Renate Phoenix Mahr",
+            "text": "Guiding change processes – culture, leadership and team development, and employee qualification."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Danny Graf, MBA",
+        "intro": "Interim plant management and interim COO – operations specialist. [More about me](/en/about/)",
+        "items": [
+          "**Areas of responsibility:** cost reduction, reorganisation and improving operating results – including sales & operations planning, optimising every process along the entire supply chain, and KPI-based leadership",
+          "**Typical settings:** corporate groups and family-owned businesses; one-off and small-batch production as well as cycle-based production",
+          "**Interim roles:** interim CEO, COO, head of operations and several plant management roles – cost reductions of approx. €40 million by the end of the respective assignments, and rising",
+          "**Company sizes:** up to approx. 1 billion in annual revenue",
+          "**Permanent positions:** plant management, branch management and production management",
+          "**Education:** MBA, Lean Six Sigma Black Belt, master craftsman in mechanical engineering; project manager, change manager, Scrum Master, FMEA moderator"
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Heike Grigat",
+        "intro": "Interim manager for process optimisation, digitalisation and project management.",
+        "items": [
+          "**Process optimisation & digitalisation** – particularly in procurement, logistics and administration",
+          "**Leadership & team development** – creating clarity, fostering ownership",
+          "**Project management** – classic and agile, applied in practice",
+          "**Guiding change** – analysis, structuring and implementation",
+          "**Experience:** many years of bridging vacancies and redesigning processes; assignments in industrial companies focused on procurement, logistics and administrative processes; specialised in change within day-to-day operations",
+          "**Qualifications:** Six Sigma Black Belt, manager for applied AI transformation, business transformation expert, project manager (classic & agile), change manager, specialist in communication and collaboration"
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Renate Phoenix Mahr",
+        "intro": "Expert in culture, leadership and team development.",
+        "items": [
+          "**Guiding change processes** – culture development",
+          "**Leading, managing, steering** – leadership development",
+          "**Employees in groups and teams** – team development, employee qualification and development",
+          "**Career:** head of recruitment, qualification and workforce planning (Campus Consult Projektmanagement GmbH); head of in-house soft-skills training (Kabel Deutschland GmbH)",
+          "**Teaching:** lecturer in leadership and management at several German universities and on the MBA programme in business management (Hochschule Biberach)",
+          "**Education:** systemic consulting and systemic coaching with Dr Gunther Schmidt (Milton Erickson Institute Heidelberg); change processes and culture development using the Graves Value System (9Levels)",
+          "**Further qualifications:** personality development based on C. G. Jung with an international licence for the Myers-Briggs Type Indicator (MBTI); MBTI-Plus licence after Richard Bents and Rainer Blank (future systems); EMDR in coaching for blockage situations (Besser-Sigmund-Institut); assessment centre facilitation (Bildungskooperation Mittelfranken GmbH)"
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Find the right specialist for your bottleneck",
+        "text": "Tell me about your situation – together we will work out who in the team can support you most effectively."
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+---
+import { ui, type Lang } from '../lib/i18n';
+interface Props { lang: Lang; id?: string }
+const { lang, id = 'cf' } = Astro.props;
+const f = ui[lang].form;
+const msg = JSON.stringify({ ok: f.ok, err: f.err, invalid: f.invalid, sending: f.sending });
+---
+<form class="form" id={id} data-contact data-msg={msg} novalidate>
+  <h3>{f.title}</h3>
+  <div class="fl"><input id={`${id}-name`} name="name" autocomplete="name" required maxlength="120" /><label class="mono" for={`${id}-name`}>{f.name} *</label></div>
+  <div class="fl"><input id={`${id}-company`} name="company" autocomplete="organization" maxlength="160" /><label class="mono" for={`${id}-company`}>{f.company}</label></div>
+  <div class="fl"><input id={`${id}-email`} name="email" type="email" autocomplete="email" required maxlength="200" /><label class="mono" for={`${id}-email`}>{f.email} *</label></div>
+  <div class="fl"><input id={`${id}-phone`} name="phone" type="tel" autocomplete="tel" maxlength="60" /><label class="mono" for={`${id}-phone`}>{f.phone}</label></div>
+  <div class="fl full"><textarea id={`${id}-msg`} name="message" required maxlength="5000"></textarea><label class="mono" for={`${id}-msg`}>{f.message} *</label></div>
+  <div class="hp" aria-hidden="true"><label for={`${id}-web`}>Website</label><input id={`${id}-web`} name="website" tabindex="-1" autocomplete="off" /></div>
+  <label class="cons"><input type="checkbox" name="consent" value="yes" required /><span set:html={f.consent} /></label>
+  <button class="btn b-gold" type="submit"><span class="lbl">{f.submit}</span><span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></button>
+  <p class="fstatus" role="status" aria-live="polite"></p>
+</form>

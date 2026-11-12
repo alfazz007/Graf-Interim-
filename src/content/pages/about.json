@@ -1,0 +1,188 @@
+{
+  "id": "about",
+  "template": "page",
+  "de": {
+    "slug": "/ueber-mich/",
+    "navTitle": "Über mich",
+    "seoTitle": "Über mich: Danny Graf, Interim Manager | Graf Interim",
+    "seoDescription": "Danny Graf, MBA & Lean Six Sigma Black Belt: Interim Manager mit langjähriger Führungserfahrung im Maschinenbau – vom Shopfloor bis zur Geschäftsführung.",
+    "eyebrow": "Über mich",
+    "title": "Danny Graf",
+    "titleAccent": "Interim Manager & Consultant",
+    "intro": "Sie profitieren von meiner mehr als 25-jährigen Expertise, wenn Ihr Unternehmen vor großen strategischen Herausforderungen steht oder aufgrund veränderter Wettbewerbsbedingungen in seiner Existenz bedroht ist.",
+    "highlights": ["MBA", "Lean Six Sigma Black Belt", "Handwerksmeister im Maschinenbau", "Geprüfter Aufsichtsrat"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Vor welcher Herausforderung stehen Sie mit Ihrem Unternehmen heute?",
+        "body": [
+          "Bei namhaften Mittelständlern mit internationaler Ausrichtung sowie bei börsennotierten Konzernen habe ich als Interim Manager das Betriebsergebnis wesentlich verbessert – indem ich Organisationsstrukturen und Prozesse optimiert und die Kosten zum Teil drastisch gesenkt habe.",
+          "**Meine Kunden zählen heute wieder zu den Marktführern in ihrer Branche.**",
+          "Über mehr als 25 Jahre habe ich die Produktionsabläufe und Organisationsstrukturen vieler Unternehmen mit bis zu 1.500 Mitarbeitern bis ins Detail studiert, gefährliche Schwachstellen aufgedeckt und Lösungswege erarbeitet."
+        ]
+      },
+      { "type": "stats" },
+      {
+        "type": "text",
+        "heading": "Ich spreche die Sprache Ihrer Mitarbeiter",
+        "body": [
+          "Sie benötigen hochmotivierte Mitarbeiter mit dem entsprechenden Know-how. Das zu vermitteln gelingt nur, wenn man die Mitarbeiter erreicht und begeistern kann. Ich spreche ihre Sprache und bin durch meine Ausbildungen und Erfahrungen methodisch sehr versiert.",
+          "Das gezielte Coaching Ihrer Führungskräfte in Workshops ist daher fester Bestandteil meiner Arbeit – damit Ihr Team künftig ohne externe Unterstützung erfolgreich arbeitet."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Meine Qualifikationen",
+        "items": [
+          "Master of Business Administration (**MBA**)",
+          "**Lean Six Sigma Black Belt**",
+          "Sales & Operations Planner (S&OP)",
+          "Geprüfter Aufsichtsrat",
+          "TÜV-geprüfter Change Manager",
+          "KVP- und Lean-Manager",
+          "Projektmanager mit Prozessoptimierung",
+          "Projektmanager (TÜV)",
+          "KI-Koordinator",
+          "Business Automation Manager (Master Class)",
+          "Scrum Master",
+          "Shopfloor Manager",
+          "FMEA-Moderator",
+          "Akkreditierter Qualitätsmanagementbeauftragter (QMB)",
+          "**Handwerksmeister im Maschinenbau**",
+          "30 Jahre Erfahrung im Maschinenbau – von Stahlbau über CNC-Zerspanung, Wärmebehandlung und Farbgebung bis hin zur Montage"
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "So arbeite ich",
+        "items": [
+          {
+            "title": "Kostentreiber schnell erkennen",
+            "text": "Mit meiner langen Historie in der Produktion erkenne ich wesentliche Kostentreiber und Fehler in den Abläufen sehr schnell – und entwickle daraus eine Strategie mit direktem Einfluss auf Ihre Kosten."
+          },
+          {
+            "title": "Konsequent umsetzen",
+            "text": "Ich erstelle Projektpläne, formiere Teams, weise Aufgaben zu, tracke den Fortschritt und unterstütze bei der Umsetzung. Fehlt methodisches Wissen, vermittle ich es in Workshops."
+          },
+          {
+            "title": "Maßgeschneidert statt Lehrbuch",
+            "text": "Best Practices aus anderen Unternehmen oder Lehrbüchern bieten nur Anhaltspunkte. Erst die enge Zusammenarbeit mit Ihren Führungskräften und Mitarbeitern ergibt einen Weg, der zu Ihrem Unternehmen passt."
+          },
+          {
+            "title": "Nachhaltig befähigen",
+            "text": "Nach meinem Einsatz initiieren Ihre Mitarbeiter Optimierungsprojekte aus eigenem Antrieb, treiben sie voran und setzen sie selbstständig um."
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Ich gehe dorthin, wo die Kennzahlen entstehen – auf den Shopfloor. Ich zeige Ihnen die tatsächlichen Potenziale und bringe Sie wieder ganz nach vorne.",
+        "cite": "Danny Graf, MBA"
+      },
+      {
+        "type": "text",
+        "heading": "Mehr über meine Arbeit",
+        "body": [
+          "Ob als [Interim COO](/interim-chief-operating-officer-coo/), [Interim Geschäftsführer](/interim-geschaeftsfuehrer/) oder in der [Beratung](/interim-beratung/) – einen Überblick über alle Einsatzformen finden Sie unter [Leistungen](/interim-leistungen/). Weitere Einblicke in meine Arbeit gebe ich in meinem [Blog](/blog/)."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Vereinbaren Sie ein erstes Gespräch",
+        "text": "Schildern Sie mir Ihre aktuelle Herausforderung – ich zeige Ihnen, wo die tatsächlichen Potenziale Ihres Unternehmens liegen."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/about/",
+    "navTitle": "About",
+    "seoTitle": "About Danny Graf, Interim Manager | Graf Interim",
+    "seoDescription": "Danny Graf, MBA & Lean Six Sigma Black Belt: interim manager with decades of leadership experience in mechanical engineering, from shop floor to boardroom.",
+    "eyebrow": "About me",
+    "title": "Danny Graf",
+    "titleAccent": "Interim Manager & Consultant",
+    "intro": "You benefit from more than 25 years of expertise when your company faces major strategic challenges or its very existence is threatened by changing competitive conditions.",
+    "highlights": ["MBA", "Lean Six Sigma Black Belt", "Master Craftsman in Mechanical Engineering", "Certified Supervisory Board Member"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "What challenge is your company facing today?",
+        "body": [
+          "As an interim manager for well-known, internationally oriented mid-sized companies and listed corporations, I have significantly improved operating results – by optimising organisational structures and processes and, in some cases, cutting costs drastically.",
+          "**Today, my clients once again rank among the market leaders in their industries.**",
+          "Over more than 25 years, I have studied the production processes and organisational structures of many companies with up to 1,500 employees in great detail, uncovering critical weaknesses and developing solutions."
+        ]
+      },
+      { "type": "stats" },
+      {
+        "type": "text",
+        "heading": "I speak your employees’ language",
+        "body": [
+          "You need highly motivated people with the right know-how. Passing that on only works if you can reach your employees and inspire them. I speak their language, and my training and experience have given me a strong methodological toolkit.",
+          "Targeted coaching of your managers in workshops is therefore an integral part of my work – so that your team can succeed without external support in the future."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "My qualifications",
+        "items": [
+          "Master of Business Administration (**MBA**)",
+          "**Lean Six Sigma Black Belt**",
+          "Sales & Operations Planner (S&OP)",
+          "Certified Supervisory Board Member",
+          "TÜV-certified Change Manager",
+          "Continuous improvement (CI) and Lean Manager",
+          "Project Manager specialising in process optimisation",
+          "Project Manager (TÜV)",
+          "AI Coordinator",
+          "Business Automation Manager (Master Class)",
+          "Scrum Master",
+          "Shopfloor Manager",
+          "FMEA Moderator",
+          "Accredited Quality Management Representative (QMR)",
+          "**Master Craftsman in Mechanical Engineering**",
+          "30 years of experience in mechanical engineering – from steel construction, CNC machining, heat treatment and painting through to assembly"
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "How I work",
+        "items": [
+          {
+            "title": "Spotting cost drivers fast",
+            "text": "With my long track record in production, I quickly identify the key cost drivers and process errors – and turn them into a strategy that has a direct impact on your costs."
+          },
+          {
+            "title": "Rigorous implementation",
+            "text": "I draw up project plans, form teams, assign tasks, track progress and support implementation. Where methodological know-how is missing, I teach it in workshops."
+          },
+          {
+            "title": "Tailored, not textbook",
+            "text": "Best practices from other companies or textbooks are only reference points. Close collaboration with your managers and employees is what produces a path that truly fits your business."
+          },
+          {
+            "title": "Lasting capability",
+            "text": "Once my assignment ends, your people initiate improvement projects on their own initiative, drive them forward and implement them independently."
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "I go where the KPIs are made – onto the shop floor. I show you your real potential and get you back out in front.",
+        "cite": "Danny Graf, MBA"
+      },
+      {
+        "type": "text",
+        "heading": "More about my work",
+        "body": [
+          "Whether as [interim COO](/en/interim-coo/), [interim managing director](/en/interim-managing-director/) or in [consulting](/en/consulting/) – you will find an overview of all engagement models under [Services](/en/services/). My [blog](/en/blog/) offers further insights into my work."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Arrange an initial conversation",
+        "text": "Tell me about your current challenge – I will show you where your company’s real potential lies."
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "id": "further",
+  "template": "service",
+  "de": {
+    "slug": "/weitere-interim-leistungen/",
+    "navTitle": "Weitere Leistungen",
+    "seoTitle": "Weitere Leistungen: KVP, Lean & Shopfloor | Graf Interim",
+    "seoDescription": "Digitalisierte KVP-Vorschlagserfassung, Shopfloor Management, Arbeitsvorbereitung und Workshops zu Lean, Wertstromanalyse und Führung – von Danny Graf.",
+    "eyebrow": "Leistung · Ergänzend",
+    "title": "Weitere Interim-Leistungen",
+    "titleAccent": "von KVP bis Shopfloor Management",
+    "intro": "Hier finden Sie eine Übersicht über die weiteren Leistungen, die Sie bei mir in Anspruch nehmen können – ergänzend zu klassischen Interim-Mandaten.",
+    "highlights": ["KVP", "Shopfloor Management", "Lean", "Arbeitsvorbereitung", "Workshops"],
+    "sections": [
+      {
+        "type": "cards",
+        "heading": "Leistungen im Überblick",
+        "items": [
+          {
+            "title": "Digitalisierte KVP-Vorschlagserfassung",
+            "text": "Einführung einer digitalisierten Erfassung von Verbesserungsvorschlägen für Ihren kontinuierlichen Verbesserungsprozess."
+          },
+          {
+            "title": "Mitarbeiter-Workshops",
+            "text": "Workshops für Ihre Mitarbeiter – von Shopfloor Management und Lean bis zu Projektmanagement, Führung und Kommunikation."
+          },
+          {
+            "title": "Arbeitsplanung & Arbeitsvorbereitung",
+            "text": "Unterstützung und Beratung rund um Arbeitsplanung und Arbeitsvorbereitung."
+          },
+          {
+            "title": "Shopfloor Management",
+            "text": "Einführung von Shopfloor Management in Ihrem Unternehmen."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Workshop-Themen",
+        "items": [
+          "Shopfloor Management",
+          "Kontinuierlicher Verbesserungsprozess (KVP)",
+          "Lean",
+          "Wertstromanalyse",
+          "Projektmanagement",
+          "Führung und Kommunikation"
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Persönliche Beratung – Umsetzung durch erfahrene Kollegen",
+        "body": [
+          "Sollte ich für längere Einsätze nicht persönlich verfügbar sein, kann ich Sie dennoch oft zu Ihrem Anliegen und Ihrer speziellen Aufgabenstellung beraten – auch bei Ihnen vor Ort.",
+          "In sehr vielen Fällen kann die Umsetzung durch einen meiner Kollegen erfolgen, für deren Fachkompetenz ich persönlich bürge. Mehr zum Team erfahren Sie unter [All-in-One Interim Management](/all-in-one-interim-management/)."
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Interim Management auch außerhalb offener Vakanzen",
+        "body": [
+          "Die Unterstützung durch einen Interim Manager ist jederzeit sinnvoll – auch wenn gerade keine Führungsposition zu besetzen ist. Durch die Analyse der Diskrepanz zwischen Soll- und Ist-Prozessen – gemessen am Benchmark, nicht an vorhandenen Prozessbeschreibungen –, die Einführung effektiver Arbeitsweisen und das Coaching Ihrer Führungskräfte bauen wir gemeinsam eine schlagkräftige und innovative Organisation auf."
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Was Sie aus der Vergangenheit bis hierhin gebracht hat, reicht nicht aus, um künftig am Markt zu bestehen. Selbst einstige Weltmarktführer fallen zurück, wenn sie sich nicht entwickeln.",
+        "cite": "Danny Graf, MBA"
+      },
+      { "type": "stats" },
+      {
+        "type": "text",
+        "heading": "Interim-Mandate mit operativer Verantwortung",
+        "body": [
+          "Neben diesen Leistungen übernehme ich auch Führungsverantwortung auf Zeit – als [Interim COO](/interim-chief-operating-officer-coo/), als [Interim Werksleiter](/interim-produktionsleitung/) oder als [Interim Geschäftsführer](/interim-geschaeftsfuehrer/). Dabei analysiere ich Abläufe, coache Ihre Fach- und Führungskräfte, optimiere Wertströme und senke Kosten – messbar an Kennzahlen.",
+          "Einen Überblick über alle Mandate finden Sie unter [Interim-Leistungen](/interim-leistungen/)."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Lassen Sie uns über Ihre Aufgabenstellung sprechen",
+        "text": "Schildern Sie mir Ihr Anliegen – gemeinsam finden wir heraus, welche Leistung Sie am besten weiterbringt und wer sie umsetzt."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/further-services/",
+    "navTitle": "Further services",
+    "seoTitle": "Further Services: CI, Lean & Shop Floor | Graf Interim",
+    "seoDescription": "Digital CI suggestion management, shop floor management, work planning and workshops on lean, value stream mapping and leadership – from Danny Graf.",
+    "eyebrow": "Service · Add-ons",
+    "title": "Further interim services",
+    "titleAccent": "from CI to shop floor management",
+    "intro": "An overview of the further services you can engage me for – alongside classic interim assignments.",
+    "highlights": ["Continuous improvement", "Shop floor management", "Lean", "Work planning", "Workshops"],
+    "sections": [
+      {
+        "type": "cards",
+        "heading": "Services at a glance",
+        "items": [
+          {
+            "title": "Digital CI suggestion management",
+            "text": "Introducing a digital system for capturing improvement suggestions as part of your continuous improvement (CI) process."
+          },
+          {
+            "title": "Employee workshops",
+            "text": "Workshops for your workforce – from shop floor management and lean to project management, leadership and communication."
+          },
+          {
+            "title": "Work planning & preparation",
+            "text": "Support and advice on work planning and production preparation."
+          },
+          {
+            "title": "Shop floor management",
+            "text": "Introducing shop floor management in your company."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Workshop topics",
+        "items": [
+          "Shop floor management",
+          "Continuous improvement (CI)",
+          "Lean",
+          "Value stream mapping",
+          "Project management",
+          "Leadership and communication"
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Personal advice – implementation by experienced colleagues",
+        "body": [
+          "Even if I am not personally available for longer assignments, I can often still advise you on your specific issue – including on site.",
+          "In many cases, implementation can be handled by one of my colleagues, whose expertise I personally vouch for. Find out more about the team under [All-in-one interim management](/en/all-in-one-interim-management/)."
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Interim management beyond open vacancies",
+        "body": [
+          "Bringing in an interim manager makes sense at any time – even when there is no leadership position to fill. By analysing the gap between target and actual processes – measured against benchmarks rather than existing process descriptions – introducing effective ways of working and coaching your managers, together we build a high-performing, innovative organisation."
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "What got you this far will not be enough to hold your own in the market in future. Even former world market leaders fall behind if they stop developing.",
+        "cite": "Danny Graf, MBA"
+      },
+      { "type": "stats" },
+      {
+        "type": "text",
+        "heading": "Interim assignments with operational responsibility",
+        "body": [
+          "In addition to these services, I take on leadership responsibility for a defined period – as [interim COO](/en/interim-coo/), [interim plant manager](/en/interim-plant-manager/) or [interim managing director](/en/interim-managing-director/). I analyse processes, coach your specialists and managers, optimise value streams and reduce costs – measurably, by the numbers.",
+          "You will find an overview of all assignments under [Services](/en/services/)."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Let’s discuss your challenge",
+        "text": "Tell me what you need – together we will work out which service will move you forward and who is best placed to deliver it."
+      }
+    ]
+  }
+}

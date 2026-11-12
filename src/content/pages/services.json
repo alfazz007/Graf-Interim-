@@ -1,0 +1,138 @@
+{
+  "id": "services",
+  "template": "page",
+  "de": {
+    "slug": "/interim-leistungen/",
+    "navTitle": "Leistungen",
+    "seoTitle": "Interim-Leistungen für die Industrie | Graf Interim",
+    "seoDescription": "Interim COO, Geschäftsführer, Head of Operations, Produktionsleitung, Beratung und Coaching – Interim Management von Danny Graf für produzierende Unternehmen.",
+    "eyebrow": "Leistungen · Überblick",
+    "title": "Meine Leistungen",
+    "titleAccent": "für produzierende Unternehmen",
+    "intro": "Je nach Herausforderung unterstütze ich Sie auf verschiedenen Ebenen – bis zum bestmöglichen Resultat.",
+    "highlights": ["Operations", "Geschäftsführung", "Produktion", "Beratung", "Coaching"],
+    "sections": [
+      {
+        "type": "cards",
+        "heading": "Wählen Sie die passende Leistung",
+        "intro": "Bitte wählen Sie eine für Sie passende Leistung für weiterführende Informationen aus.",
+        "items": [
+          {
+            "title": "Interim COO",
+            "text": "Nachhaltige Optimierung des gesamten Operations-Bereichs: kennzahlenorientierte Führung, niedrigere Produktionskosten und eine bessere Lieferperformance. [Mehr zum Interim COO](/interim-chief-operating-officer-coo/)"
+          },
+          {
+            "title": "Interim Geschäftsführer",
+            "text": "Ich vertrete Ihre unternehmerischen Interessen nach innen und außen – zur Vakanzüberbrückung oder in schwierigen Situationen – und bringe Ihr Unternehmen wieder auf Kurs. [Mehr zur Interim-Geschäftsführung](/interim-geschaeftsfuehrer/)"
+          },
+          {
+            "title": "Interim Head of Operations",
+            "text": "Auch ohne offene Vakanz, auf temporär geschaffenen Positionen: Ich analysiere Ihren Operations-Bereich und setze Maßnahmen gemeinsam mit Ihren Führungskräften um. [Mehr zum Interim Head of Operations](/interim-head-of-operations/)"
+          },
+          {
+            "title": "Interim Produktionsleitung",
+            "text": "Sofort einsatzfähig für effiziente Führung, standardisierte Abläufe, eine verbesserte Lieferperformance und gesenkte Qualitätskosten. [Mehr zur Interim-Produktionsleitung](/interim-produktionsleitung/)"
+          },
+          {
+            "title": "Beratung",
+            "text": "Mit neuer Perspektive zu besserer Leistung: Analyse Ihrer Abläufe und Strukturen, Präsentation der Potenziale und konkrete Handlungsempfehlungen – auf Wunsch inklusive Umsetzung. [Mehr zur Beratung](/interim-beratung/)"
+          },
+          {
+            "title": "Coaching",
+            "text": "High-End-Coaching für Führungskräfte, die die Lücke zwischen Vision und Realität schließen wollen – exklusiv, mit nur sechs Klient:innen pro Quartal. [Mehr zum Coaching](/coaching/)"
+          },
+          {
+            "title": "Weitere Interim-Leistungen",
+            "text": "Workshops zu Shopfloor-Management, KVP, Lean, Wertstromanalyse und mehr – sowie Unterstützung bei Arbeitsvorbereitung und digitaler KVP-Vorschlagserfassung. [Mehr zu weiteren Leistungen](/weitere-interim-leistungen/)"
+          },
+          {
+            "title": "All-in-One Interim Management",
+            "text": "Interim Management aus einer Hand: Für jeden Engpass – von COO/Plant Management über Supply Chain und Finance bis Sales & HR – steht ein Spezialist bereit. [Mehr zu All-in-One](/all-in-one-interim-management/)"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Mein Name ist Danny Graf",
+        "body": [
+          "Schwachstellen aufzudecken und Potenziale freizulegen sind die Kernelemente jeder meiner Interim-Tätigkeiten. Die dafür nötigen Zahlen, Daten und Fakten erhebe ich vor Ort, indem ich Ihre Ausgangssituation aus meinem Blickwinkel analysiere.",
+          "Über mehr als 25 Jahre habe ich die Produktionsabläufe vieler Unternehmen mit bis zu 1.500 Mitarbeitern bis ins Detail studiert, gefährliche Schwachstellen aufgedeckt und Lösungswege installiert.",
+          "Dadurch kann ich auch in Ihrem Unternehmen aus der laufenden Produktion heraus agieren und Ihre Fach- und Führungskräfte unmittelbar in die Prozessoptimierung einbinden."
+        ]
+      },
+      { "type": "stats" },
+      {
+        "type": "cta",
+        "heading": "Welche Leistung passt zu Ihnen?",
+        "text": "Wenn Sie sich nicht sicher sind, schildern Sie mir einfach Ihre Situation – gemeinsam finden wir den passenden Ansatz für Ihr Unternehmen."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/services/",
+    "navTitle": "Services",
+    "seoTitle": "Interim Management Services for Industry | Graf Interim",
+    "seoDescription": "Interim COO, managing director, head of operations, plant manager, consulting and coaching – interim management by Danny Graf for manufacturing companies.",
+    "eyebrow": "Services · Overview",
+    "title": "My services",
+    "titleAccent": "for manufacturing companies",
+    "intro": "Depending on the challenge, I support you at different levels – all the way to the best possible result.",
+    "highlights": ["Operations", "General management", "Production", "Consulting", "Coaching"],
+    "sections": [
+      {
+        "type": "cards",
+        "heading": "Choose the right service",
+        "intro": "Select the service that fits your situation to find out more.",
+        "items": [
+          {
+            "title": "Interim COO",
+            "text": "Sustainable optimisation of your entire operations function: KPI-driven leadership, lower production costs and better delivery performance. [More on the interim COO](/en/interim-coo/)"
+          },
+          {
+            "title": "Interim Managing Director",
+            "text": "I represent your business interests internally and externally – to bridge a vacancy or in difficult situations – and get your company back on course. [More on the interim managing director](/en/interim-managing-director/)"
+          },
+          {
+            "title": "Interim Head of Operations",
+            "text": "Even without a vacancy, in temporarily created roles: I analyse your operations and implement measures together with your managers. [More on the interim head of operations](/en/interim-head-of-operations/)"
+          },
+          {
+            "title": "Interim Plant Manager",
+            "text": "Ready to start immediately for effective leadership, standardised processes, better delivery performance and lower quality costs. [More on the interim plant manager](/en/interim-plant-manager/)"
+          },
+          {
+            "title": "Consulting",
+            "text": "A fresh perspective for better performance: analysis of your processes and structures, a presentation of the potential and concrete recommendations – with implementation on request. [More on consulting](/en/consulting/)"
+          },
+          {
+            "title": "Coaching",
+            "text": "High-end coaching for leaders who want to close the gap between vision and reality – exclusive, with only six clients per quarter. [More on coaching](/en/coaching/)"
+          },
+          {
+            "title": "Further interim services",
+            "text": "Workshops on shop floor management, continuous improvement (CI), Lean, value stream analysis and more – plus support with work preparation and digital CI suggestion management. [More on further services](/en/further-services/)"
+          },
+          {
+            "title": "All-in-One Interim Management",
+            "text": "Interim management from a single source: a specialist for every bottleneck – from COO/plant management through supply chain and finance to sales & HR. [More on All-in-One](/en/all-in-one-interim-management/)"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "My name is Danny Graf",
+        "body": [
+          "Uncovering weaknesses and unlocking potential are at the core of every interim assignment I take on. I gather the figures, data and facts I need on site, analysing your starting position from my own perspective.",
+          "Over more than 25 years, I have studied the production processes of many companies with up to 1,500 employees in great detail, uncovering critical weaknesses and putting solutions in place.",
+          "This allows me to act from within your ongoing production and to involve your specialists and managers directly in process optimisation."
+        ]
+      },
+      { "type": "stats" },
+      {
+        "type": "cta",
+        "heading": "Which service is right for you?",
+        "text": "If you are not sure, simply describe your situation – together we will find the right approach for your company."
+      }
+    ]
+  }
+}

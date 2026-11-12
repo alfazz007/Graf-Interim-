@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from './PageHero.astro';
+import BlogCard from './BlogCard.astro';
+import CtaBand from './CtaBand.astro';
+import { posts } from '../lib/content';
+import { ui, routes, type Lang } from '../lib/i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const b = ui[lang].blog;
+const site = Astro.site!.toString().replace(/\/$/, '');
+const jsonld = [{
+  '@context': 'https://schema.org', '@type': 'Blog', name: 'Graf Interim – Insights', url: site + routes.blog[lang], inLanguage: 'de-DE',
+  blogPost: posts.slice(0, 10).map((p) => ({ '@type': 'BlogPosting', headline: p.data.title, url: `${site}/${p.slug}/`, datePublished: p.data.date })),
+}];
+---
+<Base lang={lang} title={b.seoTitle} description={b.seoDescription} alt={routes.blog} jsonld={jsonld}>
+  <PageHero lang={lang} eyebrow={b.eyebrow} title={b.title} accent={b.accent} intro={b.intro} crumbs={[{ label: 'Blog' }]} viz="waves">
+    {b.enNote && <div class="bl-note mono rv">🇩🇪 {b.enNote}</div>}
+  </PageHero>
+  <div class="wrap">
+    <div class="bl-grid">
+      {posts.map((p, i) => <BlogCard post={p} lang={lang} big={i < 2} eager={i < 2} />)}
+    </div>
+  </div>
+  <CtaBand lang={lang} />
+</Base>

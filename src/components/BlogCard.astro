@@ -1,0 +1,13 @@
+---
+import { ui, type Lang } from '../lib/i18n';
+import { fmtDate, type Post } from '../lib/content';
+interface Props { post: Post; lang: Lang; big?: boolean; eager?: boolean }
+const { post, lang, big = false, eager = false } = Astro.props;
+const d = post.data;
+---
+<a class:list={['bl-card rv', { big }]} href={`/${post.slug}/`} hreflang="de">
+  <div class="im">{d.cover && <img src={d.cover} alt="" width={d.coverWidth || 1600} height={d.coverHeight || 900} loading={eager ? 'eager' : 'lazy'} decoding="async" />}</div>
+  <div class="meta-l mono"><span>{fmtDate(d.date, lang)}</span><span>{d.readingTime} {ui[lang].blog.min}</span></div>
+  <h2>{d.title}</h2>
+  {big && d.description && <p>{d.description}</p>}
+</a>

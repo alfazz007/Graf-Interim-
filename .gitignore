@@ -1,0 +1,23 @@
+# build output
+dist/
+.vercel/
+.astro/
+
+# dependencies
+node_modules/
+
+# env
+.env
+.env.*
+!.env.example
+
+# logs / os
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# local content-migration sources (not needed for the build)
+_source/posts/
+_source/*.md
+!_source/CONTENT_SCHEMA.md
+_source/posts_meta.json

@@ -1,0 +1,68 @@
+{
+  "id": "video",
+  "template": "page",
+  "de": {
+    "slug": "/video/",
+    "navTitle": "Video",
+    "seoTitle": "Videos: Interim Manager Danny Graf | Graf Interim",
+    "seoDescription": "Lernen Sie Interim Manager Danny Graf in seinen Videos kennen und erfahren Sie, warum er der richtige Partner für Ihr produzierendes Unternehmen ist.",
+    "eyebrow": "Video · Beiträge",
+    "title": "Erfahren Sie mehr über mich",
+    "titleAccent": "in meinen Videos",
+    "intro": "In meinen Videos erfahren Sie, wie ich arbeite und warum ich der richtige Partner für Sie bin.",
+    "sections": [
+      {
+        "type": "video",
+        "provider": "file",
+        "src": "/videos/danny-graf-intro.mp4",
+        "poster": "/videos/danny-graf-intro-poster.jpg",
+        "title": "Danny Graf – Interim Management für produzierende Unternehmen",
+        "caption": "Warum ein erfahrener Interim Manager ab dem ersten Tag wirksam ist."
+      },
+      {
+        "type": "text",
+        "heading": "Mehr über mich und meine Arbeit",
+        "body": [
+          "Mehr erfahren Sie auf der Seite [Über mich](/ueber-mich/) mehr über meinen Werdegang. Einblicke in meine Arbeit gebe ich in meinem [Blog](/blog/), und einen Überblick über meine Einsatzformen finden Sie unter [Leistungen](/interim-leistungen/)."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Lernen wir uns persönlich kennen",
+        "text": "Vereinbaren Sie ein erstes Gespräch und schildern Sie mir Ihre aktuelle Herausforderung."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/video/",
+    "navTitle": "Video",
+    "seoTitle": "Videos: Interim Manager Danny Graf | Graf Interim",
+    "seoDescription": "Get to know interim manager Danny Graf in his videos and find out why he is the right partner for your manufacturing company and its operational challenges.",
+    "eyebrow": "Video · Insights",
+    "title": "Learn more about me",
+    "titleAccent": "in my videos",
+    "intro": "My videos show how I work and why I am the right partner for you.",
+    "sections": [
+      {
+        "type": "video",
+        "provider": "file",
+        "src": "/videos/danny-graf-intro.mp4",
+        "poster": "/videos/danny-graf-intro-poster.jpg",
+        "title": "Danny Graf – interim management for manufacturing companies",
+        "caption": "Video in German."
+      },
+      {
+        "type": "text",
+        "heading": "More about me and my work",
+        "body": [
+          "You can find out more about my background on the [About](/en/about/) page. My [blog](/en/blog/) offers insights into my work, and you will find an overview of my engagement models under [Services](/en/services/)."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Let’s get to know each other",
+        "text": "Arrange an initial conversation and tell me about your current challenge."
+      }
+    ]
+  }
+}

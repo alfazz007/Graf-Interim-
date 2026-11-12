@@ -1,0 +1,184 @@
+---
+import '@fontsource/inter-tight/400.css';
+import '@fontsource/inter-tight/500.css';
+import '@fontsource/inter-tight/600.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/instrument-serif/400.css';
+import '@fontsource/instrument-serif/400-italic.css';
+import '@fontsource/geist-mono/400.css';
+import '@fontsource/geist-mono/500.css';
+import '../styles/global.css';
+import '../styles/pages.css';
+import { ui, r, serviceNav, contact, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  alt: { de: string; en: string };
+  image?: string;
+  noindex?: boolean;
+  jsonld?: Record<string, unknown>[];
+  loader?: boolean;
+  ogType?: string;
+}
+const { lang, title, description, alt, image = '/images/og-default.jpg', noindex = false, jsonld = [], loader = false, ogType = 'website' } = Astro.props;
+const t = ui[lang];
+const site = Astro.site!.toString().replace(/\/$/, '');
+const canonical = site + alt[lang];
+const ogImage = image.startsWith('http') ? image : site + image;
+const other: Lang = lang === 'de' ? 'en' : 'de';
+
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': site + '/#organization',
+  name: 'Graf Interim – Interim Management & Consulting',
+  url: site + '/',
+  image: site + '/images/hero-seated.webp',
+  logo: site + '/favicon.svg',
+  email: contact.email,
+  telephone: contact.phone,
+  address: { '@type': 'PostalAddress', streetAddress: contact.street, postalCode: contact.zip, addressLocality: contact.city, addressCountry: 'DE' },
+  areaServed: ['DE', 'AT', 'CH'],
+  founder: {
+    '@type': 'Person', '@id': site + '/#danny-graf', name: 'Danny Graf', honorificSuffix: 'MBA',
+    jobTitle: lang === 'de' ? 'Interim COO & Werksleiter' : 'Interim COO & Plant Manager',
+    sameAs: [contact.linkedin], image: site + '/images/hero-seated.webp',
+  },
+  sameAs: [contact.linkedin],
+};
+const ld = [orgLd, ...jsonld];
+---
+<!doctype html>
+<html lang={lang} data-lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow, max-image-preview:large" />}
+  <link rel="canonical" href={canonical} />
+  <link rel="alternate" hreflang="de" href={site + alt.de} />
+  <link rel="alternate" hreflang="en" href={site + alt.en} />
+  <link rel="alternate" hreflang="x-default" href={site + alt.de} />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="Graf Interim" />
+  <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_GB'} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#07131F" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <slot name="head" />
+  {ld.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
+</head>
+<body>
+  <span id="top"></span>
+  <a class="skip" href="#main">{t.skip}</a>
+
+  {loader && (
+    <div class="loader" aria-hidden="true">
+      <div class="top mono"><span>Graf Interim®</span><span>Interim Management · Consulting</span></div>
+      <div>
+        <div class="num"><span class="cnt">0</span><small>{lang === 'de' ? 'Ergebnisse, wenn es darauf ankommt.' : 'Results when it matters.'}</small></div>
+        <div class="bar"><i></i></div>
+      </div>
+    </div>
+  )}
+
+  <div class="cur" aria-hidden="true"></div>
+  <div class="cur-r" aria-hidden="true"><span></span></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="hdr" id="hdr">
+    <div class="wrap">
+      <div class="bl">
+        <a class="logo" href={r('home', lang)} aria-label="Graf Interim – {t.home}"><i>G</i><span class="t">Graf Interim<sup>®</sup></span></a>
+        <ul class="nav">
+          <li class="dd">
+            <a href={r('services', lang)}><span>{t.nav.services}</span><span aria-hidden="true">{t.nav.services}</span></a>
+            <div class="dd-panel">
+              {serviceNav.map((s) => (
+                <a href={r(s.id, lang)}><span class="mono">{s.n}</span><b>{s[lang][0]}</b><small>{s[lang][1]}</small></a>
+              ))}
+              <a class="all" href={r('services', lang)}>{t.nav.allServices} <span>→</span></a>
+            </div>
+          </li>
+          <li><a href={r('about', lang)}><span>{t.nav.about}</span><span aria-hidden="true">{t.nav.about}</span></a></li>
+          <li><a href={r('blog', lang)}><span>{t.nav.blog}</span><span aria-hidden="true">{t.nav.blog}</span></a></li>
+          <li><a href={r('faq', lang)}><span>{t.nav.faq}</span><span aria-hidden="true">{t.nav.faq}</span></a></li>
+          <li><a href={r('contact', lang)}><span>{t.nav.contact}</span><span aria-hidden="true">{t.nav.contact}</span></a></li>
+        </ul>
+      </div>
+      <div class="br">
+        <nav class="lng" aria-label={t.langLabel}>
+          <a href={alt.de} hreflang="de" lang="de" aria-current={lang === 'de' ? 'true' : undefined}>DE</a>
+          <a href={alt.en} hreflang="en" lang="en" aria-current={lang === 'en' ? 'true' : undefined}>EN</a>
+        </nav>
+        <a class="btn b-gold mg" href={r('contact', lang)}>{t.cta}<span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a>
+        <button class="menu-b" type="button" aria-label={t.menu} aria-expanded="false" aria-controls="ovl"><i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ovl" id="ovl" aria-hidden="true">
+    <div class="t"><a class="logo" href={r('home', lang)}><i>G</i>Graf Interim<sup>®</sup></a><button class="x" type="button" aria-label={t.close}>×</button></div>
+    <nav>
+      <a href={r('services', lang)}><span>{t.nav.services}</span><span class="mono">01</span></a>
+      <a href={r('about', lang)}><span>{t.nav.about}</span><span class="mono">02</span></a>
+      <a href={r('blog', lang)}><span>{t.nav.blog}</span><span class="mono">03</span></a>
+      <a href={r('faq', lang)}><span>{t.nav.faq}</span><span class="mono">04</span></a>
+      <a href={r('contact', lang)}><span>{t.nav.contact}</span><span class="mono">05</span></a>
+    </nav>
+    <div class="f">
+      <nav class="lng" aria-label={t.langLabel}><a href={alt.de} lang="de" aria-current={lang === 'de' ? 'true' : undefined}>DE</a><a href={alt.en} lang="en" aria-current={lang === 'en' ? 'true' : undefined}>EN</a></nav>
+      <a class="mono" href={contact.phoneHref}>{contact.phone}</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <slot />
+  </main>
+
+  <footer class="ft">
+    <div class="wrap">
+      <div class="ft-g">
+        <div><p class="h3">{t.footerClaim}</p></div>
+        <div><h4>{t.footer.services}</h4><ul>{serviceNav.slice(0, 5).map((s) => <li><a href={r(s.id, lang)}>{s[lang][0]}</a></li>)}</ul></div>
+        <div><h4>{t.footer.more}</h4><ul>
+          <li><a href={r('about', lang)}>{t.nav.about}</a></li>
+          <li><a href={r('blog', lang)}>{t.nav.blog}</a></li>
+          <li><a href={r('faq', lang)}>FAQ</a></li>
+          <li><a href={r('video', lang)}>Video</a></li>
+          <li><a href={r('partner', lang)}>{lang === 'de' ? 'Partner werden' : 'Become a partner'}</a></li>
+        </ul></div>
+        <div><h4>{t.footer.contact}</h4><ul>
+          <li><a href={contact.phoneHref}>{contact.phone}</a></li>
+          <li><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
+          <li>{contact.street}, {contact.zip} {contact.city}</li>
+          <li><a href={contact.linkedin} target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul></div>
+      </div>
+      <div class="wm" aria-hidden="true">Graf<span class="sf">Interim</span></div>
+      <div class="ft-b mono">
+        <span>© {new Date().getFullYear()} Graf Interim®</span>
+        <nav><a href={r('imprint', lang)}>{t.footer.imprint}</a><a href={r('privacy', lang)}>{t.footer.privacy}</a><a href="#top">{t.footer.top}</a></nav>
+      </div>
+    </div>
+  </footer>
+  <div class="pv" aria-hidden="true"></div>
+
+  <script>
+    import '../scripts/main.ts';
+  </script>
+</body>
+</html>

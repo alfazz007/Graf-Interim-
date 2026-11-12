@@ -1,0 +1,292 @@
+---
+import { r, contact, type Lang } from '../lib/i18n';
+import { posts, pageById } from '../lib/content';
+import ContactForm from './ContactForm.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = (de: string, en: string) => (lang === 'de' ? de : en);
+const faq = pageById('faq')!;
+const faqItems = faq[lang].sections.filter((b: any) => b.type === 'faq').flatMap((b: any) => b.items).slice(0, 6);
+const latest = posts.slice(0, 3);
+const arrow = `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg>`;
+const ar = `<span class="ar">${arrow}${arrow}</span>`;
+const ext = `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12L12 4M6 4h6v6"/></svg>`;
+---
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero-m"><div class="pl"><img src="/images/hero-seated.webp" width="1394" height="1045" alt={t('Danny Graf, MBA – Interim COO und Werksleiter', 'Danny Graf, MBA – interim COO and plant manager')} fetchpriority="high" /></div></div>
+  <div class="wrap">
+    <div class="hero-c">
+      <div class="eb mono rv" style="--d:900ms">Interim Management · Operations · Turnaround</div>
+      <h1 class="d1 hl-in">
+        {lang === 'de' ? (
+          <><span class="ln" style="--i:0;--d:700ms"><span>Wenn</span></span><span class="ln" style="--i:1;--d:700ms"><span>Unternehmen</span></span><span class="ln" style="--i:2;--d:700ms"><span><span class="sf">Ergebnisse</span></span></span><span class="ln" style="--i:3;--d:700ms"><span>brauchen.</span></span></>
+        ) : (
+          <><span class="ln" style="--i:0;--d:700ms"><span>When</span></span><span class="ln" style="--i:1;--d:700ms"><span>companies</span></span><span class="ln" style="--i:2;--d:700ms"><span>need</span></span><span class="ln" style="--i:3;--d:700ms"><span><span class="sf">results.</span></span></span></>
+        )}
+      </h1>
+      <div class="row">
+        <p class="rv" style="--d:1200ms">{t('Danny Graf – Interim COO und Werksleiter für produzierende Unternehmen. Ab dem ersten Tag verantwortlich für Kosten, Prozesse, Lieferperformance und Führung.', 'Danny Graf – interim COO and plant manager for manufacturing companies. Accountable from day one for costs, processes, delivery performance and leadership.')}</p>
+        <div class="ctas rv" style="--d:1350ms"><a class="btn b-gold mg" href={r('contact', lang)}>{t('Erstgespräch vereinbaren', 'Book a first call')}<Fragment set:html={ar} /></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="meta">
+    <div class="wrap">
+      <div class="c rv" style="--d:1400ms"><b>30+</b><span class="mono">{t('Jahre Führung', 'Years leadership')}</span></div>
+      <div class="c rv" style="--d:1480ms"><b>{t('35 Mio €', '€35M')}</b><span class="mono">{t('Einsparungen', 'Savings delivered')}</span></div>
+      <div class="c rv" style="--d:1560ms"><b>×7</b><span class="mono">{t('Typischer RoIM', 'Typical RoIM')}</span></div>
+      <div class="c rv" style="--d:1640ms"><b>MBA · LSS</b><span class="mono">Six Sigma Black Belt</span></div>
+      <div class="scr mono rv" style="--d:1720ms"><i></i><span>Scroll</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTRO ================= -->
+<section class="sec">
+  <div class="wrap intro">
+    <div class="lab rv">
+      <div class="tag mono">(01) {t('Haltung', 'Approach')}</div>
+      <span class="mono">{t('Krisenmanager mit Erfahrung – für produzierende Unternehmen im DACH-Raum.', 'Crisis manager with experience – for manufacturers across DACH.')}</span>
+    </div>
+    {lang === 'de' ? (
+      <p class="stmt" data-scrub>Schwierige Situationen verlangen einen <span class="sf">klaren Kopf.</span> Ich bin ab dem ersten Tag wirksam – mit drei Jahrzehnten Führungserfahrung, Durchsetzungsstärke und professionellem <span class="sf">Lean-Know-how.</span></p>
+    ) : (
+      <p class="stmt" data-scrub>Difficult situations demand a <span class="sf">clear head.</span> I’m effective from day one – with three decades of leadership, the strength to get things done and professional <span class="sf">lean expertise.</span></p>
+    )}
+    <div class="sits">
+      <div class="sit rv"><span class="mono">01</span><h3>{t('Kostendruck', 'Cost pressure')}</h3><p>{t('Margen schrumpfen – Kosten müssen spürbar sinken.', 'Margins shrink – costs must come down.')}</p></div>
+      <div class="sit rv" style="--d:100ms"><span class="mono">02</span><h3>{t('Krise', 'Crisis')}</h3><p>{t('Es geht ums Überleben – Stabilität wird sofort gebraucht.', 'Survival is at stake – stability is needed now.')}</p></div>
+      <div class="sit rv" style="--d:200ms"><span class="mono">03</span><h3>{t('Effizienz', 'Efficiency')}</h3><p>{t('Die Organisation muss schlanker werden – nur wie?', 'The organisation must get leaner – but how?')}</p></div>
+      <div class="sit rv" style="--d:300ms"><span class="mono">04</span><h3>{t('Vakanz', 'Vacancy')}</h3><p>{t('Eine Schlüsselposition muss schnell besetzt werden.', 'A key role must be filled fast.')}</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="sec cream" id="leistungen" style="padding-bottom:clamp(80px,9vw,140px)">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag mono rv">(02) {t('Leistungen', 'Services')}</div>
+      <h2 class="h2 rvl"><span class="ln" style="--i:0"><span>{t('Führung auf Zeit.', 'Leadership for a time.')}</span></span><span class="ln" style="--i:1"><span><span class="sf gold">{t('Wirkung auf Dauer.', 'Impact that lasts.')}</span></span></span></h2>
+      <p class="lead rv" style="--d:200ms">{t('Minimale Einarbeitung, maximale Wirkung. Ich greife auf Erkenntnisse aus vielen Transformationen zurück – wie aus einem Werkzeugkasten.', 'Minimal onboarding, maximum impact. I draw on lessons from many transformations – like a well-stocked toolbox.')}</p>
+    </div>
+    <div class="stack">
+      <article class="card" style="--i:0">
+        <div class="l">
+          <span class="idx-n" aria-hidden="true">01</span>
+          <div class="top mono"><span>01 / 04</span><span>{t('Kernmandat', 'Core mandate')}</span></div>
+          <h3>Interim <span class="sf">COO</span></h3>
+          <p>{t('Ich übernehme die operative Verantwortung, steuere über Kennzahlen und entwickle Ihre Führungskräfte. Kosten runter, Lieferperformance rauf – mit sofortigen Ergebnissen.', 'I take operational ownership, steer by KPIs and develop your leaders. Costs down, delivery performance up – with immediate results.')}</p>
+          <ul><li>{t('Kostensenkung', 'Cost reduction')}</li><li>{t('Lieferperformance', 'Delivery')}</li><li>{t('KPI-Steuerung', 'KPI steering')}</li></ul>
+          <div><a class="btn b-ghost" href={r('coo', lang)}>{t('Mehr erfahren', 'Learn more')}<Fragment set:html={ar} /></a></div>
+        </div>
+        <div class="r"><canvas class="viz" data-viz="waves"></canvas><div class="fig mono"><b>Fig. 01</b> — {t('Performance-Kurve', 'Performance curve')}</div><div class="cap mono"><span>{t('Kosten', 'Cost')} <b>↓</b> · Performance <b>↑</b></span><span>Live</span></div></div>
+      </article>
+      <article class="card alt" style="--i:1">
+        <div class="l">
+          <span class="idx-n" aria-hidden="true">02</span>
+          <div class="top mono"><span>02 / 04</span><span>C-Level</span></div>
+          <h3>{lang === 'de' ? <>Interim <span class="sf">Geschäfts&shy;führer</span></> : <>Interim <span class="sf">Managing Director</span></>}</h3>
+          <p>{t('Ich übernehme vorübergehend die Leitung, sichere Stabilität und setze klare Strategien um – als Vakanzüberbrückung oder in herausfordernden Situationen.', 'I lead the company temporarily, secure stability and implement a clear strategy – bridging a vacancy or in challenging situations.')}</p>
+          <ul><li>{t('Stabilität', 'Stability')}</li><li>{t('Strategie', 'Strategy')}</li><li>{t('Marktposition', 'Market position')}</li></ul>
+          <div><a class="btn b-navy" href={r('gf', lang)}>{t('Mehr erfahren', 'Learn more')}<Fragment set:html={ar} /></a></div>
+        </div>
+        <div class="r"><canvas class="viz" data-viz="sphere"></canvas><div class="fig mono"><b>Fig. 02</b> — {t('Organisation', 'Organisation')}</div><div class="cap mono" style="color:rgba(10,26,43,.7)"><span>{t('Führung · Struktur · Klarheit', 'Leadership · Structure · Clarity')}</span><span>C-Level</span></div></div>
+      </article>
+      <article class="card" style="--i:2">
+        <div class="l">
+          <span class="idx-n" aria-hidden="true">03</span>
+          <div class="top mono"><span>03 / 04</span><span>Operations</span></div>
+          <h3>Head of <span class="sf">Operations</span></h3>
+          <p>{t('Produktion, Logistik und Supply Chain in einer Hand – mit klaren Kennzahlen, schlanken Prozessen und einem durchgängigen Wertstrom.', 'Production, logistics and supply chain in one hand – with clear KPIs, lean processes and a seamless value stream.')}</p>
+          <ul><li>Supply Chain</li><li>{t('Wertstrom', 'Value stream')}</li><li>{t('Bestände', 'Inventory')}</li></ul>
+          <div><a class="btn b-ghost" href={r('hoo', lang)}>{t('Mehr erfahren', 'Learn more')}<Fragment set:html={ar} /></a></div>
+        </div>
+        <div class="r"><canvas class="viz" data-viz="stream"></canvas><div class="fig mono"><b>Fig. 03</b> — {t('Vom Chaos zum Flow', 'From chaos to flow')}</div><div class="cap mono"><span>Supply Chain · {t('Logistik', 'Logistics')}</span><span><b>→</b> Flow</span></div></div>
+      </article>
+      <article class="card" style="--i:3">
+        <div class="l">
+          <span class="idx-n" aria-hidden="true">04</span>
+          <div class="top mono"><span>04 / 04</span><span>{t('Werk', 'Plant')}</span></div>
+          <h3>{lang === 'de' ? <>Produktions<wbr /><span class="sf">leitung</span></> : <>Plant <span class="sf">Management</span></>}</h3>
+          <p>{t('Werksleitung mit Shopfloor Management, KVP und Fertigungssteuerung – für mehr Output, höhere Anlageneffektivität und niedrigere Qualitätskosten.', 'Plant leadership with shopfloor management, continuous improvement and production control – for more output, higher equipment effectiveness and lower cost of quality.')}</p>
+          <ul><li>Shopfloor</li><li>{t('KVP', 'CI')}</li><li>OEE</li></ul>
+          <div><a class="btn b-ghost" href={r('plant', lang)}>{t('Mehr erfahren', 'Learn more')}<Fragment set:html={ar} /></a></div>
+        </div>
+        <div class="r"><canvas class="viz" data-viz="rings"></canvas><div class="fig mono"><b>Fig. 04</b> — {t('Anlageneffektivität', 'Equipment effectiveness')}</div><div class="cap mono"><span>OEE · {t('Qualität', 'Quality')} · Output</span><span><b>↑</b></span></div></div>
+      </article>
+    </div>
+    <div class="more rv">
+      <span class="mono" style="color:var(--g-700)">{t('Außerdem', 'Also')}</span>
+      <div class="ls">
+        <a href={r('consulting', lang)}>{t('Beratung', 'Consulting')} ↗</a>
+        <a href={r('coaching', lang)}>{t('Coaching', 'Coaching')} ↗</a>
+        <a href={r('further', lang)}>{t('Weitere Leistungen', 'Further services')} ↗</a>
+        <a href={r('allinone', lang)}>All-in-One ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KPI SCENE ================= -->
+<section class="kp" id="zahlen">
+  <div class="kp-s">
+    <canvas class="viz kp-bg" data-viz="waves" data-soft="1" aria-hidden="true"></canvas>
+    <div class="wrap kp-in">
+      <div class="kp-hd">
+        <div class="tag mono rv">(03) {t('In Zahlen', 'By the numbers')}</div>
+        <h2 class="h2 rvl"><span class="ln" style="--i:0"><span>{t('Führen nach Kennzahlen.', 'Leading by KPIs.')}</span></span><span class="ln" style="--i:1"><span><span class="sf gold-l">{t('Gemessen an Ergebnissen.', 'Measured by results.')}</span></span></span></h2>
+      </div>
+      <ul class="kp-nav mono">
+        <li class="on"><i></i>01 · {t('Einsparungen', 'Savings')}</li>
+        <li><i></i>02 · {t('Erfahrung', 'Experience')}</li>
+        <li><i></i>03 · Return on Interim Management</li>
+        <li><i></i>04 · {t('Zeit bis zur Wirkung', 'Time to impact')}</li>
+      </ul>
+      <div class="kp-st">
+        <div class="kpi on rv"><div class="v">35<small>{t('Mio €', 'M €')}</small></div><div class="c"><p>{t('Nachhaltige Einsparungen für Auftraggeber – durch schlankere Prozesse und gesunkene Bestände.', 'Sustainable savings for clients – through leaner processes and lower inventory.')}</p><span class="mono">01</span></div></div>
+        <div class="kpi rv"><div class="v">30<small>+</small></div><div class="c"><p>{t('Jahre Führungserfahrung in produzierenden Unternehmen – auch bei Weltmarktführern.', 'Years of leadership in manufacturing – including at world market leaders.')}</p><span class="mono">02</span></div></div>
+        <div class="kpi rv"><div class="v">×7</div><div class="c"><p>{t('Typischer Return on Interim Management. In Einzelfällen bis ×10.', 'Typical return on interim management. In some cases up to ×10.')}</p><span class="mono">03</span></div></div>
+        <div class="kpi rv"><div class="v">6–18</div><div class="c"><p>{t('Monate bis zur nachhaltigen Performance-Steigerung. Quick-Wins ab Tag eins.', 'Months to a sustainable performance increase. Quick wins from day one.')}</p><span class="mono">04</span></div></div>
+      </div>
+    </div>
+    <div class="kp-pg mono"><span class="ix">01</span><span class="bar"><i></i></span><span>04</span></div>
+  </div>
+</section>
+
+<!-- ================= ROAR ================= -->
+<section class="roar" id="roar">
+  <div class="roar-s">
+    <div class="track">
+      <div class="pnl"><div class="p-intro">
+        <div>
+          <div class="tag mono rv">(04) {t('Führungsprinzip', 'Leadership principle')}</div>
+          <h2 class="h2 rvl"><span class="ln" style="--i:0"><span>R·O·A·R</span></span><span class="ln" style="--i:1"><span><span class="sf gold">{t('Führung, die wirkt.', 'Leadership that works.')}</span></span></span></h2>
+          <p class="lead rv" style="--d:200ms">{t('Aus über 30 Jahren Praxis ist mein Framework entstanden – veröffentlicht als Buch „ROAR – The Leadership Framework for High-Performance Organizations“.', 'Three decades of practice became my framework – published as “ROAR – The Leadership Framework for High-Performance Organizations”.')}</p>
+          <div class="rv" style="--d:300ms;margin-top:34px"><a class="btn b-navy mg" href={contact.book} target="_blank" rel="noopener">{t('Buch ansehen', 'View the book')}<span class="ar"><Fragment set:html={ext + ext} /></span></a></div>
+        </div>
+        <div class="bk rv" style="--d:200ms"><img src="/images/roar-book.webp" width="600" height="891" alt={t('Buch ROAR von Danny Graf', 'ROAR book by Danny Graf')} loading="lazy" /></div>
+      </div></div>
+      <div class="pnl" data-cur="ROAR"><div class="p-l"><span class="big">R</span><div><span class="mono">01 · Responsibility</span><h3>{t('Verantwortung übernehmen.', 'Take responsibility.')}</h3><p>{t('Vom ersten Tag an – für Zahlen, Menschen und Ergebnisse.', 'From day one – for numbers, people and results.')}</p></div></div></div>
+      <div class="pnl" data-cur="ROAR"><div class="p-l"><span class="big">O</span><div><span class="mono">02 · Ownership</span><h3>{t('Entscheidungen treffen.', 'Own the decisions.')}</h3><p>{t('Klar entscheiden und für das Ergebnis einstehen.', 'Decide clearly and stand by the outcome.')}</p></div></div></div>
+      <div class="pnl" data-cur="ROAR"><div class="p-l"><span class="big">A</span><div><span class="mono">03 · Awareness</span><h3>{t('Klar sehen.', 'See clearly.')}</h3><p>{t('Der nüchterne Blick auf Kennzahlen, Prozesse und Organisation.', 'A sober view of KPIs, processes and organisation.')}</p></div></div></div>
+      <div class="pnl" data-cur="ROAR"><div class="p-l"><span class="big">R</span><div><span class="mono">04 · Results</span><h3>{t('Ergebnisse liefern.', 'Deliver results.')}</h3><p>{t('Messbar in der Bilanz – nicht in Präsentationen.', 'Measurable on the balance sheet – not in slide decks.')}</p></div></div></div>
+    </div>
+    <div class="roar-pg mono"><span>R·O·A·R</span><span class="bar"><i></i></span><span>Scroll →</span></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec" id="ueber-mich">
+  <div class="wrap ab">
+    <div class="ab-img clip">
+      <span class="ring" aria-hidden="true"></span>
+      <div class="lbl mono"><span>Danny Graf, MBA</span><span>Lübeck</span></div>
+      <div class="qc"><p>{t('„Ich bin ab dem ersten Tag wirksam.“', '“I’m effective from day one.”')}</p><span class="mono">— Danny Graf</span></div>
+      <img class="abp" src="/images/about-portrait.webp" width="900" height="700" alt={t('Porträt Danny Graf', 'Portrait of Danny Graf')} loading="lazy" />
+    </div>
+    <div class="ab-c">
+      <div class="tag mono rv">(05) {t('Über mich', 'About')}</div>
+      <blockquote class="rvl">
+        {lang === 'de' ? (
+          <><span class="ln" style="--i:0"><span>Kein Unternehmen gleicht</span></span><span class="ln" style="--i:1"><span>dem anderen. Deshalb gibt es</span></span><span class="ln" style="--i:2"><span><span class="sf">keine Lösung von der Stange.</span></span></span></>
+        ) : (
+          <><span class="ln" style="--i:0"><span>No two companies are alike.</span></span><span class="ln" style="--i:1"><span>That’s why there are</span></span><span class="ln" style="--i:2"><span><span class="sf">no off-the-shelf solutions.</span></span></span></>
+        )}
+      </blockquote>
+      <p class="rv">{t('Als Interim Manager bringe ich viel Erfahrung und Fingerspitzengefühl für Ihre Situation mit. Aus meinen Einsätzen in Krisensituationen – auch bei Weltmarktführern – bediene ich mich wie aus einem Werkzeugkasten und finde die passende Lösung.', 'As an interim manager I bring extensive experience and a feel for your situation. From my crisis assignments – including at world market leaders – I draw on a proven toolbox to find the right solution.')}</p>
+      <div class="facts rv">
+        <div><span class="mono">{t('Ausbildung', 'Education')}</span><b>MBA</b></div>
+        <div><span class="mono">{t('Methodik', 'Method')}</span><b>Lean Six Sigma Black Belt</b></div>
+        <div><span class="mono">{t('Erfahrung', 'Experience')}</span><b>{t('30+ Jahre Führung in der Industrie', '30+ years of industrial leadership')}</b></div>
+        <div><span class="mono">{t('Arbeitsweise', 'Way of working')}</span><b>{t('Vor Ort, 5 Tage pro Woche', 'On site, 5 days a week')}</b></div>
+        <div><span class="mono">Region</span><b>{t('Lübeck · gesamter DACH-Raum', 'Lübeck · all of DACH')}</b></div>
+      </div>
+      <div class="rv"><a class="btn b-navy mg" href={r('about', lang)}>{t('Mein Werdegang', 'My background')}<Fragment set:html={ar} /></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag mono rv">(06) {t('Ablauf', 'Process')}</div>
+      <h2 class="h2 rvl"><span class="ln" style="--i:0"><span>{t('Drei Schritte.', 'Three steps.')}</span></span><span class="ln" style="--i:1"><span><span class="sf gold">{t('Keine Mindestlaufzeit.', 'No minimum term.')}</span></span></span></h2>
+      <p class="lead rv" style="--d:200ms">{t('Kündigungsfrist in der Regel vier Wochen – kürzer oder länger nach Absprache.', 'Notice period usually four weeks – shorter or longer by agreement.')}</p>
+    </div>
+    <div class="steps">
+      <div class="st rv"><span class="n">01</span><span class="mono">{t('Heute', 'Today')}</span><h3>{t('Kontakt aufnehmen', 'Get in touch')}</h3><p>{t('Per Formular, Telefon oder E-Mail – vertraulich und unverbindlich.', 'Via form, phone or email – confidential and without obligation.')}</p></div>
+      <div class="st rv" style="--d:150ms"><span class="n">02</span><span class="mono">Teams</span><h3>{t('Erstes Gespräch', 'First call')}</h3><p>{t('Wir sprechen über Ihre Herausforderung und wie ich Sie unterstützen kann.', 'We discuss your challenge and how I can support you.')}</p></div>
+      <div class="st rv" style="--d:300ms"><span class="n">03</span><span class="mono">{t('Vor Ort', 'On site')}</span><h3>{t('Termin bei Ihnen', 'Visit at your site')}</h3><p>{t('Ich mache mir persönlich ein Bild von der aktuellen Situation.', 'I get a first-hand picture of the current situation.')}</p></div>
+    </div>
+    <div class="pfoot rv">
+      <p>{lang === 'de' ? <>Tagessatz: ca. <span class="gold">1 %</span> des Jahresgehalts einer festangestellten Führungskraft auf gleicher Position.</> : <>Daily rate: about <span class="gold">1%</span> of the annual salary of a permanent executive in the same role.</>}</p>
+      <a class="btn b-navy mg" href={r('contact', lang)}>{t('Performance steigern', 'Boost performance')}<Fragment set:html={ar} /></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSIGHTS ================= -->
+<section class="sec cream" id="insights">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag mono rv">(07) Insights</div>
+      <h2 class="h2 rvl"><span class="ln" style="--i:0"><span>{t('Gedanken aus', 'Thinking from')}</span></span><span class="ln" style="--i:1"><span><span class="sf gold">{t('der Praxis.', 'the shop floor.')}</span></span></span></h2>
+      <div class="side rv" style="--d:200ms"><a class="tlink" href={r('blog', lang)}>{t(`Alle ${posts.length} Beiträge`, `All ${posts.length} articles`)} →</a></div>
+    </div>
+    <div class="posts">
+      {latest.map((p) => (
+        <a class="post rv" data-img={p.data.cover} href={`/${p.slug}/`} hreflang="de">
+          <img class="th" src={p.data.cover} alt="" loading="lazy" width={p.data.coverWidth} height={p.data.coverHeight} />
+          <span class="mono">{p.data.category === 'Allgemein' ? t('Artikel', 'Article') : p.data.category}</span>
+          <h3>{p.data.title}</h3>
+          <span class="rt mono">{p.data.readingTime} {t('Min.', 'min')}</span>
+          <span class="ar"><Fragment set:html={arrow} /></span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <div class="hl">
+      <div class="tag mono rv">(08) FAQ</div>
+      <h2 class="h2 rvl"><span class="ln" style="--i:0"><span>{t('Fragen?', 'Questions?')}</span></span><span class="ln" style="--i:1"><span><span class="sf gold">{t('Antworten.', 'Answers.')}</span></span></span></h2>
+      <p class="lead rv">{t('Ehrlich und konkret – zu Dauer, Kosten und Zusammenarbeit.', 'Honest and specific – on duration, cost and collaboration.')}</p>
+      <p class="rv" style="margin-top:26px"><a class="tlink" href={r('faq', lang)}>{t('Alle Fragen', 'All questions')} →</a></p>
+    </div>
+    <div class="ql">
+      {faqItems.map((q: any, i: number) => (
+        <details class="rv" open={i === 0}><summary><span class="mono">{String(i + 1).padStart(2, '0')}</span><span class="q">{q.q}</span><i aria-hidden="true"></i></summary><div class="a">{q.a.split(/\n\n+/).map((p: string) => <p>{p.replace(/\*\*/g, '')}</p>)}</div></details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="ct" id="kontakt">
+  <div class="big-mq" aria-hidden="true"><div class="tr">
+    {[0, 1, 2, 3].map(() => <span>{t('Lassen Sie uns', 'Let’s talk')}<span class="sf">{t('sprechen', 'results')}</span></span>)}
+  </div></div>
+  <div class="wrap ct-g">
+    <div class="ct-l">
+      <div class="tag mono rv">(09) {t('Kontakt', 'Contact')}</div>
+      <p class="lead rv">{t('Vertraulich, unverbindlich und auf Augenhöhe. Ich melde mich in der Regel innerhalb von 24 Stunden.', 'Confidential, no obligation, on equal terms. I usually reply within 24 hours.')}</p>
+      <a class="circ mg rv" href={`mailto:${contact.email}`} aria-label={t('E-Mail schreiben', 'Write an email')}>
+        <svg viewBox="0 0 190 190" aria-hidden="true"><defs><path id="cp" d="M95,95 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" /></defs><text><textPath href="#cp">Graf Interim · Interim Management · Consulting ·</textPath></text></svg>
+        <span set:html={t('E-Mail<br />schreiben', 'Write an<br />email')} />
+      </a>
+      <div class="cinfo rv">
+        <a href={contact.phoneHref}><span>{contact.phone}</span><span class="mono">{t('Telefon', 'Phone')}</span></a>
+        <a href={`mailto:${contact.email}`}><span>{contact.email}</span><span class="mono">E-Mail</span></a>
+        <a href={contact.linkedin} target="_blank" rel="noopener"><span>Danny Graf, MBA</span><span class="mono">LinkedIn ↗</span></a>
+        <div><span>{contact.street}, {contact.zip} {contact.city}</span><span class="mono">{t('Adresse', 'Address')}</span></div>
+      </div>
+    </div>
+    <div class="ct-f rv" style="--d:150ms"><ContactForm lang={lang} id="hf" /></div>
+  </div>
+</section>

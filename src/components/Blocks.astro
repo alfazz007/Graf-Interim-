@@ -1,0 +1,91 @@
+---
+import { marked } from 'marked';
+import { ui, inlineMd, type Lang } from '../lib/i18n';
+import type { Block } from '../lib/content';
+import CtaBand from './CtaBand.astro';
+interface Props { lang: Lang; blocks: Block[] }
+const { lang, blocks } = Astro.props;
+const t = ui[lang];
+const pad = (n: number) => String(n + 1).padStart(2, '0');
+let secNo = 0;
+const label = () => `(${pad(secNo++)})`;
+---
+{blocks.map((b) => {
+  switch (b.type) {
+    case 'text':
+      return (
+        <div class="wrap"><div class="blk">
+          <div class="bh">{b.heading && <><div class="tag mono rv">{label()}</div><h2 class="rv">{b.heading}</h2></>}</div>
+          <div class="bb">{b.body.map((p) => <p class="rv" set:html={inlineMd(p)} />)}</div>
+        </div></div>
+      );
+    case 'list':
+      return (
+        <div class="wrap"><div class="blk">
+          <div class="bh">{b.heading && <><div class="tag mono rv">{label()}</div><h2 class="rv">{b.heading}</h2></>}</div>
+          <div class="bb">
+            {b.intro && <p class="bintro rv" set:html={inlineMd(b.intro)} />}
+            <ul class="blk-list rv">{b.items.map((i) => <li><span set:html={inlineMd(i)} /></li>)}</ul>
+          </div>
+        </div></div>
+      );
+    case 'cards':
+      return (
+        <div class="wrap"><div class="blk full">
+          <div class="bh">{b.heading && <><div class="tag mono rv">{label()}</div><h2 class="rv">{b.heading}</h2></>}{b.intro && <p class="bintro rv" style="margin-top:20px" set:html={inlineMd(b.intro)} />}</div>
+          <div class="bb"><div class="b-cards">
+            {b.items.map((c, i) => <article class="b-card rv" style={`--d:${(i % 3) * 90}ms`}><span class="mono">{pad(i)}</span><h3>{c.title}</h3><p set:html={inlineMd(c.text)} /></article>)}
+          </div></div>
+        </div></div>
+      );
+    case 'steps':
+      return (
+        <div class="wrap"><div class="blk full">
+          <div class="bh">{b.heading && <><div class="tag mono rv">{label()}</div><h2 class="rv">{b.heading}</h2></>}{b.intro && <p class="bintro rv" style="margin-top:20px" set:html={inlineMd(b.intro)} />}</div>
+          <div class="bb"><div class="b-steps">
+            {b.items.map((c, i) => <article class="b-step rv" style={`--d:${i * 110}ms`}><span class="n">{pad(i)}</span><h3>{c.title}</h3><p set:html={inlineMd(c.text)} /></article>)}
+          </div></div>
+        </div></div>
+      );
+    case 'quote':
+      return (
+        <div class="wrap blk-quote"><figure class="rv"><blockquote set:html={inlineMd(b.text)} />{b.cite && <figcaption class="mono">— {b.cite}</figcaption>}</figure></div>
+      );
+    case 'stats':
+      return (
+        <div class="wrap blk-stats"><div class="stats-row rv">
+          {t.stats.map(([v, l]) => <div><b>{v}</b><span class="mono">{l}</span></div>)}
+        </div></div>
+      );
+    case 'faq':
+      return (
+        <div class="wrap"><div class="faq">
+          <div class="hl">{b.heading && <><div class="tag mono rv">{label()}</div><h2 class="h2 rv" style="font-size:clamp(30px,3vw,48px)">{b.heading}</h2></>}</div>
+          <div class="ql">
+            {b.items.map((q, i) => (
+              <details class="rv" open={i === 0}>
+                <summary><span class="mono">{pad(i)}</span><span class="q">{q.q}</span><i aria-hidden="true"></i></summary>
+                <div class="a">{q.a.split(/\n\n+/).map((p) => <p set:html={inlineMd(p)} />)}</div>
+              </details>
+            ))}
+          </div>
+        </div></div>
+      );
+    case 'video':
+      return (
+        <div class="wrap blk-video rv">
+          <div class="vid">
+            <video preload="none" playsinline poster={b.poster} src={b.src} aria-label={b.title}></video>
+            <button class="play" type="button" aria-label={t.video.play}><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span><em>{b.title}</em></button>
+          </div>
+          {(b.title || b.caption) && <div class="vid-cap"><b>{b.title}</b>{b.caption && <span>{b.caption}</span>}</div>}
+        </div>
+      );
+    case 'cta':
+      return <CtaBand lang={lang} heading={b.heading} text={b.text} />;
+    case 'prose':
+      return <div class="wrap"><div class="prose" set:html={marked.parse(b.markdown, { async: false }) as string} /></div>;
+    default:
+      return null;
+  }
+})}

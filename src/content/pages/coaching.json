@@ -1,0 +1,254 @@
+{
+  "id": "coaching",
+  "template": "service",
+  "de": {
+    "slug": "/coaching/",
+    "navTitle": "Coaching",
+    "seoTitle": "High-End-Coaching für Führungskräfte | Graf Interim",
+    "seoDescription": "High-End-Coaching mit Danny Graf: Potenzial-Audit, Signature-Strategie und 1-zu-1-Mentoring für Führungskräfte, die ihren Marktwert gezielt steigern wollen.",
+    "eyebrow": "Leistung · Coaching",
+    "title": "Entfalten Sie Ihr volles Potenzial",
+    "titleAccent": "High-End-Coaching mit Danny Graf",
+    "intro": "Für Führungskräfte, die die Lücke zwischen Vision und Realität schließen wollen – exklusiv, fordernd, transformativ.",
+    "highlights": [
+      "Potenzial-Audit",
+      "Positionierung",
+      "Marktwert",
+      "1-zu-1-Mentoring"
+    ],
+    "sections": [
+      {
+        "type": "cards",
+        "heading": "Warum dieses Coaching anders ist",
+        "items": [
+          {
+            "title": "Ergebnis statt Theorie",
+            "text": "Case „Heike“: innerhalb von drei Jahren ein Einkommenszuwachs um den Faktor 6 – durch konsequente Kompetenzausweitung, neue Fachzertifikate, gezieltes Auftreten und ein klares Wertversprechen. Ein gemeinsam geplanter Prozess mit disziplinierter Umsetzung."
+          },
+          {
+            "title": "Exklusiv & individuell",
+            "text": "Nur sechs Klientinnen und Klienten pro Quartal – absolute Vertraulichkeit, maßgeschneiderte Schritte und durchgehende persönliche Betreuung. Ihr Erfolg steht im Mittelpunkt jeder Interaktion."
+          },
+          {
+            "title": "Sparring auf Augenhöhe",
+            "text": "Ich liefere Analyse und ehrliches Feedback – Sie bringen den Einsatz, neue Fähigkeiten aufzubauen und in Resultate zu verwandeln. Praxisorientierte Transformation statt Theorie."
+          }
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "Ihr Weg zum neuen Marktwert",
+        "items": [
+          {
+            "title": "Potenzial-Audit",
+            "text": "360°-Analyse von Stärken, Erfolgsgeschichten und Markttrends: Wir identifizieren Ihre einzigartigen Fähigkeiten und Erfolgsmuster – für eine glasklare Positionierung."
+          },
+          {
+            "title": "Signature-Strategie",
+            "text": "Ihr unverwechselbares Value-Narrativ und ein Entwicklungsplan für Skills, Zertifikate und Netzwerk – mit messbarem Nutzen für Ihren Arbeitgeber oder Auftraggeber."
+          },
+          {
+            "title": "Income-Lift",
+            "text": "Karriere-Roadmap und Rollendesign: Sie verankern neue Kompetenzen, wir trainieren Präsenz und Selbstsicherheit – für einen deutlichen Gewinn an Einkommen und Einfluss."
+          },
+          {
+            "title": "Mastery-Mentoring",
+            "text": "6–24 Monate 1-zu-1-Begleitung (remote) mit Quartalsreviews – für kontinuierliches Wachstum und deutlich mehr Autorität in Ihrem Berufsfeld."
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Innerhalb von drei Jahren konnte ich mein Einkommen versechsfachen. Der Schlüssel war kein ‚Trick‘, sondern ein strukturierter Prozess, den Danny und ich gemeinsam geplant haben.",
+        "cite": "Heike, Coaching-Klientin"
+      },
+      {
+        "type": "cards",
+        "heading": "Erfolgsstory: Case „Heike“",
+        "items": [
+          {
+            "title": "Ausgangslage",
+            "text": "Qualifizierte Fachkraft mit unterdurchschnittlichem Gehalt und geringer Sichtbarkeit im Unternehmen. Das Potenzial blieb ungenutzt, Selbstzweifel bremsten den Fortschritt."
+          },
+          {
+            "title": "Maßnahmen",
+            "text": "Neue Fachzertifikate, gezielter Aufbau von Schlüsselkompetenzen, Training für souveränes Auftreten und die Entwicklung eines klaren Wertversprechens."
+          },
+          {
+            "title": "Ergebnis",
+            "text": "Einkommenszuwachs um den Faktor 6, der Schritt aus dem Angestelltenverhältnis in die Selbständigkeit, deutlich gesteigertes Selbstvertrauen und neue berufliche Perspektiven."
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "provider": "file",
+        "src": "/videos/case-heike.mp4",
+        "poster": "/videos/case-heike-poster.jpg",
+        "title": "Erfolgsstory: Case „Heike“",
+        "caption": ""
+      },
+      {
+        "type": "quote",
+        "text": "Ich baue die Brücke zwischen Ihrem Können und dem Preis, den der Markt dafür zahlt – gehen müssen Sie sie selbst.",
+        "cite": "Danny Graf, Executive & Market-Value Coach"
+      },
+      {
+        "type": "text",
+        "heading": "Gemeinsam entfalten wir, was schon in Ihnen steckt",
+        "body": [
+          "Die Arbeit leisten Sie, der Fahrplan kommt von mir. Echte Transformation braucht beides: professionelle Anleitung und konsequente Umsetzung. Als Ihr Coach biete ich Ihnen Struktur, Werkzeuge und ehrliches Feedback – Sie bringen Einsatz und die Bereitschaft zur Veränderung mit.",
+          "**Investition:** signifikant höher als bei einem Standard-Karrierecoaching – weil die Rendite in Einkommen, Einfluss und Lebensqualität exponentiell ist."
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "Ihre nächsten Schritte",
+        "items": [
+          {
+            "title": "5-Minuten-Profilbogen",
+            "text": "Ein kurzer Fragebogen mit zehn Aussagen zur Selbsteinschätzung: So verstehe ich Ihr Ziel und kann einschätzen, ob mein Coaching für Sie in Ihrer aktuellen Situation geeignet ist."
+          },
+          {
+            "title": "Strategie-Call (30 Min.)",
+            "text": "In einem unverbindlichen und kostenlosen Gespräch prüfen wir Chemie und Commitment und besprechen erste Ansatzpunkte für Ihre Entwicklung."
+          },
+          {
+            "title": "Kick-off",
+            "text": "Der Start in Ihr persönliches Potenzial-Programm – mit einer maßgeschneiderten Strategie und ersten konkreten Schritten."
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Sichern Sie sich Ihren Strategie-Call",
+        "text": "30 Minuten, unverbindlich und kostenlos – für alle, die keine Ausreden mehr suchen, sondern endlich Wirkung erzeugen wollen."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/coaching/",
+    "navTitle": "Coaching",
+    "seoTitle": "High-End Executive Coaching | Graf Interim",
+    "seoDescription": "High-end coaching with Danny Graf: potential audit, signature strategy and one-to-one mentoring for leaders who want to raise their market value decisively.",
+    "eyebrow": "Service · Coaching",
+    "title": "Unlock your full potential",
+    "titleAccent": "High-end coaching with Danny Graf",
+    "intro": "For leaders who want to close the gap between vision and reality – exclusive, demanding, transformative.",
+    "highlights": [
+      "Potential audit",
+      "Positioning",
+      "Market value",
+      "1:1 mentoring"
+    ],
+    "sections": [
+      {
+        "type": "cards",
+        "heading": "Why this coaching is different",
+        "items": [
+          {
+            "title": "Results, not theory",
+            "text": "The “Heike” case: a sixfold increase in income within three years – through a consistent expansion of skills, new professional certifications, a more confident presence and a clear value proposition. A jointly planned process, executed with discipline."
+          },
+          {
+            "title": "Exclusive & individual",
+            "text": "Only six clients per quarter – complete confidentiality, tailored steps and continuous personal support. Your success is at the centre of every interaction."
+          },
+          {
+            "title": "Sparring as equals",
+            "text": "I provide analysis and honest feedback – you bring the commitment to build new skills and turn them into results. Practical transformation instead of theory."
+          }
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "Your path to a new market value",
+        "items": [
+          {
+            "title": "Potential audit",
+            "text": "A 360° analysis of your strengths, success stories and market trends: we identify your unique abilities and patterns of success – for crystal-clear positioning."
+          },
+          {
+            "title": "Signature strategy",
+            "text": "Your distinctive value narrative and a development plan for skills, certifications and network – with measurable benefit for your employer or clients."
+          },
+          {
+            "title": "Income lift",
+            "text": "Career roadmap and role design: you embed new skills while we train presence and self-assurance – for a significant gain in income and influence."
+          },
+          {
+            "title": "Mastery mentoring",
+            "text": "6–24 months of one-to-one support (remote) with quarterly reviews – for continuous growth and noticeably greater authority in your field."
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Within three years I was able to increase my income sixfold. The key wasn’t a ‘trick’ but a structured process that Danny and I planned together.",
+        "cite": "Heike, coaching client"
+      },
+      {
+        "type": "cards",
+        "heading": "Success story: the “Heike” case",
+        "items": [
+          {
+            "title": "Starting point",
+            "text": "A qualified professional with a below-average salary and little visibility in the company. Her potential was untapped, and self-doubt was holding back her progress."
+          },
+          {
+            "title": "Measures",
+            "text": "New professional certifications, targeted development of key skills, training for a confident presence and a clear value proposition."
+          },
+          {
+            "title": "Result",
+            "text": "A sixfold increase in income, the move from employment into self-employment, significantly greater self-confidence and new career prospects."
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "provider": "file",
+        "src": "/videos/case-heike.mp4",
+        "poster": "/videos/case-heike-poster.jpg",
+        "title": "Success story: the “Heike” case",
+        "caption": "Video in German."
+      },
+      {
+        "type": "quote",
+        "text": "I build the bridge between what you can do and the price the market will pay for it – but you have to cross it yourself.",
+        "cite": "Danny Graf, Executive & Market-Value Coach"
+      },
+      {
+        "type": "text",
+        "heading": "Together we unlock what is already in you",
+        "body": [
+          "You do the work; I provide the roadmap. Real transformation needs both: professional guidance and consistent execution. As your coach I give you structure, tools and honest feedback – you bring commitment and a willingness to change.",
+          "**Investment:** significantly higher than standard career coaching – because the return in income, influence and quality of life is exponential."
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "Your next steps",
+        "items": [
+          {
+            "title": "5-minute profile",
+            "text": "A short self-assessment questionnaire with ten statements, so that I understand your goal and can judge whether my coaching suits your current situation."
+          },
+          {
+            "title": "Strategy call (30 min)",
+            "text": "In a free, no-obligation conversation we check chemistry and commitment and discuss first starting points for your development."
+          },
+          {
+            "title": "Kick-off",
+            "text": "The start of your personal potential programme – with a tailored strategy and your first concrete steps."
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Book your strategy call",
+        "text": "30 minutes, free and without obligation – for everyone who has stopped looking for excuses and wants to make a real impact."
+      }
+    ]
+  }
+}

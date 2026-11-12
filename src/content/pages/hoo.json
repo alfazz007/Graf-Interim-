@@ -1,0 +1,120 @@
+{
+  "id": "hoo",
+  "template": "service",
+  "de": {
+    "slug": "/interim-head-of-operations/",
+    "navTitle": "Interim Head of Operations",
+    "seoTitle": "Interim Head of Operations | Graf Interim",
+    "seoDescription": "Interim Head of Operations für Maschinenbau und Produktion: Analyse Ihres Operations-Bereichs und gezielte Befähigung Ihrer Führungskräfte – auch ohne Vakanz.",
+    "eyebrow": "Leistung · Operations",
+    "title": "Interim Head of Operations",
+    "titleAccent": "auch ohne offene Vakanz",
+    "intro": "Auch auf einer temporär neu geschaffenen Stelle lassen sich Veränderungen umsetzen – für Maschinenbau und produzierendes Gewerbe.",
+    "highlights": ["Operations", "Führungskultur", "Methodik", "Qualitätskosten", "Lieferperformance"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Effektive Anleitung Ihrer Führungskräfte",
+        "body": [
+          "Es muss keine Führungsposition vorübergehend unbesetzt sein, damit sich meine Unterstützung lohnt. Als Interim Head of Operations arbeite ich abseits des Tagesgeschäfts gezielt mit Ihren Führungskräften an deren Arbeitsweise und Wirksamkeit – und befähige sie nachhaltig, Unternehmen und Abteilungen künftig effizienter zu führen."
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "So arbeite ich",
+        "items": [
+          { "title": "Analyse", "text": "Ich analysiere Ihren Bereich Operations und vergleiche Soll- und Ist-Prozesse – gemessen am Benchmark, nicht an vorhandenen Prozessbeschreibungen." },
+          { "title": "Maßnahmen", "text": "Auf dieser Grundlage arbeite ich konkrete Maßnahmen aus und führe effektive Arbeitsweisen ein." },
+          { "title": "Umsetzung", "text": "Die Maßnahmen setze ich gemeinsam mit Ihren Führungskräften um – direkt in der Organisation." },
+          { "title": "Befähigung", "text": "Durch Coaching gebe ich Ihren Führungskräften die passenden Tools an die Hand, damit Ihre Organisation dauerhaft schlagkräftig und innovativ bleibt." }
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Know-how entscheidet über Effizienz",
+        "body": [
+          "Die eingesetzten Tools und die Softskills Ihrer Führungskräfte entscheiden darüber, wie effizient Ihr Unternehmen arbeitet. Fehlt das Know-how, kann man noch so viel wollen und fordern: Ihre Mitarbeiter sind dann trotz bestem Wissen und Gewissen nicht in der Lage, Abläufe zu rationalisieren, die Kosten schlechter Qualität zu senken und die Lieferperformance deutlich zu verbessern.",
+          "Nach rund 30 Jahren Führungserfahrung in produzierenden Unternehmen und der Zusammenarbeit mit maßgebenden Mentoren erkenne ich schnell auch in der Führungskultur Ansätze für Verbesserungen – und gebe Ihren Mitarbeitern die Tools an die Hand, die zu Ihrem Unternehmen passen."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Was ich mitbringe",
+        "items": [
+          "**Erfahrung** aus Jahrzehnten in der Führung produzierender Unternehmen",
+          "**Methodisches Know-how** für effiziente Abläufe",
+          "Klare **Kommunikation**",
+          "**Umsetzungsstärke**",
+          "**Beharrlichkeit**",
+          "**Vorbildwirkung** für Ihre Führungskräfte"
+        ]
+      },
+      {
+        "type": "stats"
+      },
+      {
+        "type": "cta",
+        "heading": "Ihr Operations-Bereich soll wirksamer werden?",
+        "text": "Lassen Sie uns darüber sprechen, wo Ihre Organisation heute steht und wie ich Ihre Führungskräfte gezielt weiterentwickeln kann."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/interim-head-of-operations/",
+    "navTitle": "Interim Head of Operations",
+    "seoTitle": "Interim Head of Operations | Graf Interim",
+    "seoDescription": "Interim Head of Operations for engineering and manufacturing: analysing your operations and developing your managers in a targeted way – even without a vacancy.",
+    "eyebrow": "Service · Operations",
+    "title": "Interim Head of Operations",
+    "titleAccent": "even without a vacancy",
+    "intro": "Real change can also be delivered through a temporarily created role – for mechanical engineering and manufacturing companies.",
+    "highlights": ["Operations", "Leadership culture", "Methodology", "Cost of quality", "Delivery performance"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Hands-on guidance for your managers",
+        "body": [
+          "A leadership position does not have to be vacant for my support to pay off. As interim Head of Operations, I work with your managers away from day-to-day business on how they work and how effective they are – and enable them to run the company and its departments more efficiently in the long term."
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "How I work",
+        "items": [
+          { "title": "Analysis", "text": "I analyse your operations and compare target and actual processes – measured against benchmarks, not against existing process descriptions." },
+          { "title": "Measures", "text": "On that basis I develop concrete measures and introduce effective ways of working." },
+          { "title": "Implementation", "text": "I implement the measures together with your managers – directly within the organisation." },
+          { "title": "Enablement", "text": "Through coaching, I give your managers the right tools so that your organisation stays strong and innovative for the long term." }
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Know-how drives efficiency",
+        "body": [
+          "The tools your managers use and their soft skills determine how efficiently your company operates. Without the know-how, no amount of willpower or pressure helps: however hard they try, your people will not be able to streamline processes, reduce the cost of poor quality or significantly improve delivery performance.",
+          "With around 30 years of leadership experience in manufacturing companies and having worked with influential mentors, I quickly spot room for improvement in leadership culture too – and give your people the tools that fit your company."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "What I bring",
+        "items": [
+          "**Experience** from decades of leadership in manufacturing",
+          "**Methodological know-how** for efficient processes",
+          "Clear **communication**",
+          "Strength in **execution**",
+          "**Persistence**",
+          "Leading **by example** for your managers"
+        ]
+      },
+      {
+        "type": "stats"
+      },
+      {
+        "type": "cta",
+        "heading": "Want your operations to perform better?",
+        "text": "Let's talk about where your organisation stands today and how I can develop your managers in a targeted way."
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "plant",
+  "template": "service",
+  "de": {
+    "slug": "/interim-produktionsleitung/",
+    "navTitle": "Interim Produktionsleitung",
+    "seoTitle": "Interim Produktionsleitung | Graf Interim",
+    "seoDescription": "Interim Produktionsleitung: mehr Output, standardisierte Abläufe, niedrigere Fertigungskosten und Fehlerquoten – mit Shopfloor-Management, KVP und Lean.",
+    "eyebrow": "Leistung · Produktion",
+    "title": "Interim Produktionsleitung",
+    "titleAccent": "sofort einsatzfähig",
+    "intro": "Effiziente Führung, verbesserte Lieferperformance, Senkung der Qualitätskosten: Als Interim Produktionsleiter schaffe ich vom ersten Tag an Mehrwert in Ihrer Fertigung.",
+    "highlights": ["Shopfloor-Management", "Fehlerquote", "Kennzahlen", "KVP", "Lean"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Mehr Output, standardisierte Abläufe, weniger Kosten und Fehler",
+        "body": [
+          "Kurze Einarbeitungszeiten und meine Erfahrung in der Fertigungs- und Personaleinsatzplanung sowie in der rationellen Arbeitsvorbereitung bringen Ihrem Unternehmen sofort einen Mehrwert.",
+          "Eine spürbare Reduzierung der Fertigungskosten, optimierte Abläufe und eine deutlich niedrigere Fehlerquote motivieren Ihre Mitarbeiter neu – und schlagen sich im Betriebsergebnis nieder."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Meine Schwerpunkte in der Produktion",
+        "items": [
+          "Einführung oder Verbesserung von **Shopfloor-Management**",
+          "Senkung der **Fehlerquote**",
+          "Führung nach **Kennzahlen**",
+          "Verbesserung Ihres **KVP-Prozesses**",
+          "**Mitarbeiter-Workshops** zu Lean, KVP und Shopfloor-Management"
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Produktion im Zusammenspiel mit dem ganzen Unternehmen",
+        "body": [
+          "Neben dem Tagesgeschäft nehme ich gern maßgeblich Einfluss auf Prozessverbesserungen – gerade bei Themen wie KVP oder Shopfloor-Management. Bedenken Sie jedoch: Die Produktion interagiert mit vielen unterstützenden Prozessen."
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Eine wirklich durchschlagende Optimierung Ihrer Organisation erreichen Sie niemals nur durch den Fokus auf die Produktion.",
+        "cite": "Danny Graf, MBA"
+      },
+      {
+        "type": "cards",
+        "heading": "Produktionsleitung, Werksleitung oder COO?",
+        "intro": "Welche Rolle passt, hängt wesentlich von Größe und Struktur Ihres Unternehmens ab. Gern berate ich Sie individuell.",
+        "items": [
+          { "title": "Interim Produktionsleitung", "text": "Fokus auf die Fertigung: Output, Standardisierung, Kosten, Fehlerquote und kontinuierliche Verbesserung." },
+          { "title": "Interim Werksleitung", "text": "Verantwortung für die Produktion und ihre unterstützenden Bereiche an einem Standort einer größeren Organisation, etwa einer Holding mit mehreren Standorten." },
+          { "title": "Interim COO", "text": "Operative Leitung des gesamten Unternehmens. Da sich die Aufgaben mit denen der Werksleitung vielfach überschneiden, ist eine Kombination oft sinnvoll – mehr zum [Interim COO](/interim-chief-operating-officer-coo/)." }
+        ]
+      },
+      {
+        "type": "stats"
+      },
+      {
+        "type": "cta",
+        "heading": "Ihre Produktion braucht kurzfristig Führung?",
+        "text": "Sprechen Sie mich an – gemeinsam klären wir, wo die größten Hebel in Ihrer Fertigung liegen und welche Rolle für Ihr Unternehmen die richtige ist."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/interim-plant-manager/",
+    "navTitle": "Interim Plant Manager",
+    "seoTitle": "Interim Production & Plant Manager | Graf Interim",
+    "seoDescription": "Interim production management: higher output, standardised processes, lower manufacturing costs and defect rates – via shopfloor management, CI and lean.",
+    "eyebrow": "Service · Production",
+    "title": "Interim Production Management",
+    "titleAccent": "ready to start immediately",
+    "intro": "Efficient leadership, better delivery performance, lower cost of quality: as interim production manager, I add value to your manufacturing from day one.",
+    "highlights": ["Shopfloor management", "Defect rate", "KPIs", "Continuous improvement (CI)", "Lean"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Higher output, standardised processes, lower costs and fewer defects",
+        "body": [
+          "A short ramp-up time and my experience in production and workforce planning as well as efficient work preparation deliver immediate value to your company.",
+          "A noticeable reduction in manufacturing costs, optimised workflows and a significantly lower defect rate re-motivate your employees – and show up in your operating result."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "My focus areas in production",
+        "items": [
+          "Introducing or improving **shopfloor management**",
+          "Reducing the **defect rate**",
+          "Managing by **KPIs**",
+          "Improving your **continuous improvement (CI) process**",
+          "**Employee workshops** on lean, CI and shopfloor management"
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Production as part of the whole company",
+        "body": [
+          "Alongside day-to-day operations, I am happy to drive process improvements – especially in areas such as CI and shopfloor management. Keep in mind, though, that production interacts with many supporting processes."
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "You will never achieve a truly decisive improvement of your organisation by focusing on production alone.",
+        "cite": "Danny Graf, MBA"
+      },
+      {
+        "type": "cards",
+        "heading": "Production manager, plant manager or COO?",
+        "intro": "Which role fits depends largely on the size and structure of your company. I am happy to advise you individually.",
+        "items": [
+          { "title": "Interim production management", "text": "Focus on manufacturing: output, standardisation, costs, defect rates and continuous improvement." },
+          { "title": "Interim plant management", "text": "Responsibility for production and its supporting functions at one site of a larger organisation, such as a holding company with several locations." },
+          { "title": "Interim COO", "text": "Operational leadership of the entire company. As the tasks overlap with plant management in many areas, combining the roles often makes sense – more on the [interim COO](/en/interim-coo/)." }
+        ]
+      },
+      {
+        "type": "stats"
+      },
+      {
+        "type": "cta",
+        "heading": "Does your production need leadership at short notice?",
+        "text": "Get in touch – together we will identify the biggest levers in your manufacturing and the right role for your company."
+      }
+    ]
+  }
+}

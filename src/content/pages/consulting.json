@@ -1,0 +1,164 @@
+{
+  "id": "consulting",
+  "template": "service",
+  "de": {
+    "slug": "/interim-beratung/",
+    "navTitle": "Interim Beratung",
+    "seoTitle": "Interim Beratung für Produktion & Operations | Graf Interim",
+    "seoDescription": "Unternehmensberatung für Maschinenbau und produzierendes Gewerbe: mehrtägige Analyse, Einsparpotenziale und konkrete Handlungsempfehlungen von Danny Graf.",
+    "eyebrow": "Leistung · Beratung",
+    "title": "Unternehmensberatung",
+    "titleAccent": "für produzierende Unternehmen",
+    "intro": "Mit modernen Ansätzen zu einer optimierten Wertschöpfungskette – für den Maschinenbau und das gesamte produzierende Gewerbe.",
+    "highlights": ["Prozessoptimierung", "Einsparpotenziale", "Handlungsempfehlungen", "Wettbewerbsfähigkeit"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Wegweiser zur Optimierung Ihrer Abläufe und Strukturen",
+        "body": [
+          "Mit meiner auf Ihr Unternehmen abgestimmten Beratung erhalten Sie konkrete Empfehlungen, um Ihre internationale Wettbewerbsfähigkeit zu sichern oder wiederherzustellen. Die Beratung umfasst die gesamte Organisation – die Organisationsstruktur ebenso wie die Produktion.",
+          "Bevorzugt analysiere ich die komplette Organisation (mehr dazu in meinem [Blog](/blog/)), auf Wunsch fokussiere ich mich auch auf einzelne Bereiche. Mein Spezialgebiet ist dabei der gesamte Bereich **Operations**."
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "So läuft die Beratung ab",
+        "items": [
+          {
+            "title": "Analyse Ihrer Betriebsabläufe",
+            "text": "In einer in der Regel mehrtägigen Analyse untersuche ich Ihre Abläufe – bevorzugt in der gesamten Organisation, auf Wunsch fokussiert auf einzelne Bereiche."
+          },
+          {
+            "title": "Gespräche mit Ihren Fach- und Führungskräften",
+            "text": "Die Gespräche mit Ihrem Fach- und Führungspersonal liefern weitere wichtige Erkenntnisse darüber, wo Ihre bestehenden Workflows verbessert werden können."
+          },
+          {
+            "title": "Präsentation und Handlungsempfehlungen",
+            "text": "Zum Abschluss erhalten Sie eine umfassende Präsentation der Erkenntnisse mit einer Darstellung der Potenziale und einem Vorschlag zur Umsetzung der erarbeiteten Maßnahmen."
+          },
+          {
+            "title": "Begleitung der Umsetzung",
+            "text": "Gern leite und begleite ich die Umsetzung persönlich. Bei speziellen Anforderungen oder umfangreicheren Aufgaben arbeite ich mit sehr erfahrenen Spezialisten aus meinem Netzwerk zusammen – auf Wunsch erhalten Sie ein Angebot für die Umsetzung durch mein Team und mich."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Was Ihnen meine Beratung bringt",
+        "items": [
+          "Beratung zur **Prozess- und Workflow-Optimierung**",
+          "Aufdecken von **versteckten Umsatzpotenzialen**",
+          "Präsentation und **konkrete Handlungsempfehlungen**",
+          "Wiederherstellung Ihrer **Wettbewerbsfähigkeit**"
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Interim Management auch außerhalb offener Vakanzen",
+        "body": [
+          "Die Unterstützung durch einen Interim Manager ist jederzeit sinnvoll – auch wenn gerade keine Führungsposition zu besetzen ist. Auch außerhalb des Tagesgeschäfts decke ich Potenziale auf und befähige Ihre Führungskräfte, auf ganz neue Weise wirksam zu werden.",
+          "Durch die Analyse der Diskrepanz zwischen Soll- und Ist-Prozessen – gemessen am Benchmark, nicht an vorhandenen Prozessbeschreibungen –, die Einführung effektiver Arbeitsweisen und das Coaching Ihrer Führungskräfte bauen wir gemeinsam eine schlagkräftige und innovative Organisation auf."
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Was Sie aus der Vergangenheit bis hierhin gebracht hat, reicht nicht aus, um künftig am Markt zu bestehen. Selbst einstige Weltmarktführer fallen zurück, wenn sie sich nicht entwickeln.",
+        "cite": "Danny Graf, MBA"
+      },
+      { "type": "stats" },
+      {
+        "type": "text",
+        "heading": "Von der Empfehlung zur Umsetzung in Verantwortung",
+        "body": [
+          "Wenn Maßnahmen nicht nur empfohlen, sondern auch durchgesetzt werden müssen, übernehme ich die operative Verantwortung auf Zeit – als [Interim COO](/interim-chief-operating-officer-coo/), als [Interim Werksleiter](/interim-produktionsleitung/) oder als [Interim Geschäftsführer](/interim-geschaeftsfuehrer/). Ich analysiere Abläufe, setze neue Impulse, coache Ihre Fach- und Führungskräfte, optimiere Wertströme und senke so die Kosten – messbar an Kennzahlen.",
+          "In der Vergangenheit habe ich mehrfach erfolgreich mit weltmarktführenden Unternehmen zusammengearbeitet und vor allem im Maschinenbau und im produzierenden Gewerbe große Einsparungen und Effizienzsteigerungen umgesetzt."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Lassen Sie uns ins Gespräch kommen",
+        "text": "Vereinbaren Sie ein persönliches Gespräch – vor Ort oder per Teams-Meeting. Ich beantworte Ihre Fragen und gebe Ihnen eine erste Einschätzung zu Ihren Potenzialen und zum möglichen Vorgehen."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/consulting/",
+    "navTitle": "Consulting",
+    "seoTitle": "Operations Consulting for Manufacturers | Graf Interim",
+    "seoDescription": "Management consulting for mechanical engineering and manufacturing: an in-depth on-site analysis, hidden savings potential and concrete recommendations.",
+    "eyebrow": "Service · Consulting",
+    "title": "Management consulting",
+    "titleAccent": "for manufacturing companies",
+    "intro": "Modern approaches to an optimised value chain – for mechanical engineering and manufacturing businesses of every kind.",
+    "highlights": ["Process optimisation", "Savings potential", "Clear recommendations", "Competitiveness"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "A roadmap for better processes and structures",
+        "body": [
+          "My consulting is tailored to your company and gives you concrete recommendations for securing or restoring your international competitiveness. It covers the entire organisation – your organisational structure as well as production.",
+          "I prefer to analyse the organisation as a whole (more on this in my [blog](/en/blog/)), but I am happy to focus on individual areas if you wish. My speciality is the entire field of **operations**."
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": "How the engagement works",
+        "items": [
+          {
+            "title": "Analysis of your operations",
+            "text": "In an analysis that usually takes several days, I examine your processes – ideally across the whole organisation, or focused on specific areas if you prefer."
+          },
+          {
+            "title": "Interviews with your specialists and managers",
+            "text": "Conversations with your specialist and management staff provide further important insight into where your existing workflows can be improved."
+          },
+          {
+            "title": "Presentation and recommendations",
+            "text": "At the end you receive a comprehensive presentation of the findings, showing the potential identified and a proposal for implementing the recommended measures."
+          },
+          {
+            "title": "Support with implementation",
+            "text": "I am glad to lead and support the implementation personally. For specialist requirements or larger assignments I work with highly experienced experts from my network – on request, I will send you a proposal for implementation by my team and me."
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "What my consulting delivers",
+        "items": [
+          "Advice on **process and workflow optimisation**",
+          "Uncovering **hidden revenue potential**",
+          "A presentation with **concrete recommendations for action**",
+          "Restoring your **competitiveness**"
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Interim management beyond open vacancies",
+        "body": [
+          "Bringing in an interim manager makes sense at any time – even when there is no leadership position to fill. Outside day-to-day operations, too, I uncover potential and enable your managers to become effective in entirely new ways.",
+          "By analysing the gap between target and actual processes – measured against benchmarks rather than existing process descriptions – introducing effective ways of working and coaching your managers, together we build a high-performing, innovative organisation."
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "What got you this far will not be enough to hold your own in the market in future. Even former world market leaders fall behind if they stop developing.",
+        "cite": "Danny Graf, MBA"
+      },
+      { "type": "stats" },
+      {
+        "type": "text",
+        "heading": "From recommendation to hands-on responsibility",
+        "body": [
+          "When measures need to be enforced rather than merely recommended, I take on operational responsibility for a defined period – as [interim COO](/en/interim-coo/), [interim plant manager](/en/interim-plant-manager/) or [interim managing director](/en/interim-managing-director/). I analyse processes, provide fresh impetus, coach your specialists and managers, optimise value streams and so reduce costs – measurably, by the numbers.",
+          "I have worked successfully with world market leaders on several occasions and delivered substantial savings and efficiency gains, particularly in mechanical engineering and manufacturing."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Let’s talk",
+        "text": "Arrange a personal meeting – on site or via Teams. I will answer your questions and give you an initial assessment of your potential and a possible approach."
+      }
+    ]
+  }
+}

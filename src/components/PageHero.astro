@@ -1,0 +1,45 @@
+---
+import { ui, r, type Lang } from '../lib/i18n';
+interface Props {
+  lang: Lang;
+  eyebrow?: string;
+  title: string;
+  accent?: string;
+  intro?: string;
+  chips?: string[];
+  crumbs?: { label: string; href?: string }[];
+  viz?: 'waves' | 'sphere' | 'stream' | 'rings' | false;
+  cta?: boolean;
+  slim?: boolean;
+}
+const { lang, eyebrow, title, accent, intro, chips = [], crumbs = [], viz = 'waves', cta = false, slim = false } = Astro.props;
+const t = ui[lang];
+const trail = [{ label: t.home, href: r('home', lang) }, ...crumbs];
+---
+<section class:list={['ph', { slim }]}>
+  <div class="grid-l" aria-hidden="true"></div>
+  {viz && <canvas class="viz" data-viz={viz} data-soft={viz === 'waves' ? '1' : undefined} aria-hidden="true"></canvas>}
+  <div class="wrap">
+    <nav class="crumbs mono rv" aria-label="Breadcrumb">
+      {trail.map((c, i) => (
+        <>
+          {i > 0 && <span class="sep">/</span>}
+          {c.href && i < trail.length - 1 ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}
+        </>
+      ))}
+    </nav>
+    {eyebrow && <div class="eb mono rv">{eyebrow}</div>}
+    <h1 class="rvl">
+      <span class="ln" style="--i:0"><span>{title}</span></span>
+      {accent && <span class="ln" style="--i:1"><span><span class="sf">{accent}</span></span></span>}
+    </h1>
+    {intro && <p class="lead rv" style="--d:200ms">{intro}</p>}
+    {chips.length > 0 && <div class="chips rv" style="--d:300ms">{chips.map((c) => <span>{c}</span>)}</div>}
+    {cta && (
+      <div class="acts rv" style="--d:400ms">
+        <a class="btn b-gold mg" href={r('contact', lang)}>{t.ctaLong}<span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a>
+      </div>
+    )}
+    <slot />
+  </div>
+</section>

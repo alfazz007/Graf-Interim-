@@ -1,0 +1,126 @@
+{
+  "id": "partner",
+  "template": "page",
+  "de": {
+    "slug": "/partner-werden/",
+    "navTitle": "Partner werden",
+    "seoTitle": "Partner werden: Netzwerk für Interim Manager | Graf Interim",
+    "seoDescription": "Werden Sie Partner von Danny Graf: Ich baue mein Netzwerk erfahrener Interim Manager aus und suche Black Belts, Supply Chain Manager und Produktionsleiter.",
+    "eyebrow": "Netzwerk · Kooperation",
+    "title": "Werden Sie Partner",
+    "titleAccent": "im Netzwerk von Graf Interim®",
+    "intro": "Der Markt für Interim Manager wächst. Die Zusammenarbeit und das Netzwerken mit echten Know-how-Trägern sind mir wichtig – deshalb möchte ich Sie zu einer Kooperation ermutigen.",
+    "highlights": ["Kooperation", "Netzwerk", "DACH-Region", "Maschinenbau"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Sehr geehrte Kolleginnen und Kollegen,",
+        "body": [
+          "oft genug erhalten wir Projektanfragen, während wir bereits in einem Projekt gebunden sind – oder wir benötigen zur schnellen Umsetzung die Unterstützung eines erfahrenen Kollegen.",
+          "Seit mehr als 25 Jahren bin ich im Maschinenbau in leitenden Positionen tätig – vom Mittelstand bis zu global agierenden Aktiengesellschaften in der DACH-Region. Mittel- und langfristig soll mein Netzwerk weiter wachsen, daher freue ich mich über Ihre Kontaktaufnahme."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Meine Schwerpunkte",
+        "intro": "Meine Erfahrungen konzentrieren sich auf folgende Positionen:",
+        "items": [
+          "[Interim Chief Operating Officer](/interim-chief-operating-officer-coo/)",
+          "[Interim Consultant](/interim-beratung/)",
+          "[Interim Head of Operations](/interim-head-of-operations/)",
+          "[Interim Geschäftsführer](/interim-geschaeftsfuehrer/)"
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Ich suche permanent",
+        "items": [
+          "**Black Belts mit Führungserfahrung** aus den Bereichen Chemie, Automotive und Maschinenbau",
+          "**Wirtschaftsingenieure**",
+          "Erfahrene **Supply Chain Manager**",
+          "Erfahrene **Projektmanager**",
+          "Erfahrene **Produktionsleiter mit Führungserfahrung** von mehr als 100 Mitarbeitern und modernen Prozesskenntnissen (z. B. REFA-Techniker, Lean-Manager), die eine Karriere als Interim Manager anstreben"
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Lassen Sie uns im Team auf dem weiterhin expandierenden Markt für Interim Management unsere Kunden zu internationaler Wettbewerbsfähigkeit führen.",
+        "cite": "Danny Graf, MBA & Lean Six Sigma Black Belt"
+      },
+      {
+        "type": "text",
+        "heading": "Der erste Schritt",
+        "body": [
+          "Bei Interesse senden Sie mir bitte zunächst Ihren CV, damit ich Ihr Profil bei mir offline und geschützt ablegen kann.",
+          "Sie interessieren sich grundsätzlich für die Arbeit als Interim Manager? Dann biete ich Ihnen gern meine Unterstützung zu allen Themen rund um das Interim Management an."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Melden Sie sich bei mir",
+        "text": "Senden Sie mir Ihren CV oder rufen Sie mich an – ich freue mich auf den Austausch mit Ihnen."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/become-a-partner/",
+    "navTitle": "Become a partner",
+    "seoTitle": "Become a Partner: Interim Manager Network | Graf Interim",
+    "seoDescription": "Partner with Danny Graf: I am expanding my network of experienced interim managers and looking for Black Belts, supply chain managers and production managers.",
+    "eyebrow": "Network · Partnership",
+    "title": "Become a partner",
+    "titleAccent": "in the Graf Interim® network",
+    "intro": "The market for interim managers is growing. Working and networking with genuine experts matters to me – which is why I would like to encourage you to partner with me.",
+    "highlights": ["Partnership", "Network", "DACH region", "Mechanical engineering"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Dear colleagues,",
+        "body": [
+          "all too often, we receive project requests while we are already committed to an assignment – or we need the support of an experienced colleague to deliver results quickly.",
+          "For more than 25 years, I have held senior positions in mechanical engineering – from mid-sized companies to globally operating public limited companies in the DACH region. I want my network to keep growing over the medium and long term, so I look forward to hearing from you."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "My focus areas",
+        "intro": "My experience centres on the following roles:",
+        "items": [
+          "[Interim Chief Operating Officer](/en/interim-coo/)",
+          "[Interim Consultant](/en/consulting/)",
+          "[Interim Head of Operations](/en/interim-head-of-operations/)",
+          "[Interim Managing Director](/en/interim-managing-director/)"
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "I am always looking for",
+        "items": [
+          "**Black Belts with leadership experience** from the chemical, automotive and mechanical engineering sectors",
+          "**Industrial engineers**",
+          "Experienced **supply chain managers**",
+          "Experienced **project managers**",
+          "Experienced **production managers who have led teams of more than 100 people** and bring modern process expertise (e.g. REFA technicians, Lean managers) and are aiming for a career in interim management"
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Let’s work as a team in the ever-expanding interim management market and lead our clients to international competitiveness.",
+        "cite": "Danny Graf, MBA & Lean Six Sigma Black Belt"
+      },
+      {
+        "type": "text",
+        "heading": "The first step",
+        "body": [
+          "If you are interested, please start by sending me your CV so that I can store your profile securely offline.",
+          "Interested in working as an interim manager in general? I am happy to support you on any topic related to interim management."
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Get in touch",
+        "text": "Send me your CV or give me a call – I look forward to talking with you."
+      }
+    ]
+  }
+}

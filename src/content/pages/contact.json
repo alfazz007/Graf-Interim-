@@ -1,0 +1,64 @@
+{
+  "id": "contact",
+  "template": "contact",
+  "de": {
+    "slug": "/kontakt/",
+    "navTitle": "Kontakt",
+    "seoTitle": "Kontakt: Interim Manager Danny Graf | Graf Interim",
+    "seoDescription": "Kontaktieren Sie Interim Manager Danny Graf telefonisch oder per Nachricht. Schildern Sie Ihre Situation – gemeinsam finden wir die passende Interim-Leistung.",
+    "eyebrow": "Kontakt",
+    "title": "Gerne helfe ich",
+    "titleAccent": "Ihnen weiter",
+    "intro": "Wenn Sie sich nicht sicher sind, welche Interim-Leistung für Sie ideal ist, schildern Sie mir einfach telefonisch oder per Nachricht Ihre Situation.",
+    "sections": [
+      {
+        "type": "steps",
+        "heading": "So geht es jetzt weiter",
+        "items": [
+          {
+            "title": "Kontakt aufnehmen",
+            "text": "Sie schreiben mir über das Formular, per E-Mail oder rufen mich direkt an."
+          },
+          {
+            "title": "Teams-Meeting",
+            "text": "Wir sprechen in einem Teams-Meeting über Ihre aktuelle Herausforderung und darüber, wie ich Sie unterstützen kann."
+          },
+          {
+            "title": "Termin vor Ort",
+            "text": "Wir treffen uns bei Ihnen vor Ort, und ich mache mir persönlich ein Bild von der aktuellen Situation."
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/contact/",
+    "navTitle": "Contact",
+    "seoTitle": "Contact Interim Manager Danny Graf | Graf Interim",
+    "seoDescription": "Contact interim manager Danny Graf by phone or message. Describe your situation and together we will find the interim management service that suits you best.",
+    "eyebrow": "Contact",
+    "title": "I’m happy",
+    "titleAccent": "to help",
+    "intro": "If you are not sure which interim service is right for you, simply describe your situation to me by phone or message.",
+    "sections": [
+      {
+        "type": "steps",
+        "heading": "What happens next",
+        "items": [
+          {
+            "title": "Get in touch",
+            "text": "Write to me via the form or by email, or call me directly."
+          },
+          {
+            "title": "Teams meeting",
+            "text": "We discuss your current challenge in a Teams meeting and how I can support you."
+          },
+          {
+            "title": "On-site visit",
+            "text": "We meet at your premises so I can see the current situation for myself."
+          }
+        ]
+      }
+    ]
+  }
+}

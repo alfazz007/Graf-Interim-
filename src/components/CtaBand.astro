@@ -1,0 +1,20 @@
+---
+import { ui, r, contact, inlineMd, type Lang } from '../lib/i18n';
+interface Props { lang: Lang; heading?: string; text?: string }
+const { lang, heading, text } = Astro.props;
+const t = ui[lang];
+const h = heading || (lang === 'de' ? 'Lassen Sie uns über Ihre Situation sprechen.' : 'Let’s talk about your situation.');
+---
+<div class="wrap">
+  <section class="ctab rv">
+    <canvas class="viz" data-viz="waves" data-soft="1" aria-hidden="true"></canvas>
+    <div class="tag mono">{lang === 'de' ? 'Nächster Schritt' : 'Next step'}</div>
+    <h2 style="margin-top:22px">{h}</h2>
+    {text && <p set:html={inlineMd(text)} />}
+    {!text && <p>{lang === 'de' ? 'Vertraulich, unverbindlich und auf Augenhöhe. Antwort in der Regel innerhalb von 24 Stunden.' : 'Confidential, no obligation, on equal terms. I usually reply within 24 hours.'}</p>}
+    <div class="row">
+      <a class="btn b-gold mg" href={r('contact', lang)}>{t.ctaBand.button}<span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a>
+      <div class="ph-l"><span class="mono">{t.ctaBand.call}</span><a href={contact.phoneHref}>{contact.phone}</a></div>
+    </div>
+  </section>
+</div>

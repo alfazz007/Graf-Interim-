@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Blocks from '../components/Blocks.astro';
+import ContactForm from '../components/ContactForm.astro';
+import BlogCard from '../components/BlogCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { pages, posts, fmtDate, type PageData, type Post } from '../lib/content';
+import { ui, r, routes, contact, type Lang } from '../lib/i18n';
+
+export function getStaticPaths() {
+  const out: any[] = [];
+  for (const p of pages) {
+    for (const lang of ['de', 'en'] as Lang[]) {
+      const slug = p[lang].slug.replace(/^\/|\/$/g, '');
+      out.push({ params: { slug }, props: { kind: 'page', page: p, lang } });
+    }
+  }
+  for (const post of posts) out.push({ params: { slug: post.slug }, props: { kind: 'post', post, lang: 'de' } });
+  return out;
+}
+
+const { kind, page, post, lang } = Astro.props as { kind: 'page' | 'post'; page?: PageData; post?: Post; lang: Lang };
+const t = ui[lang];
+const vizFor: Record<string, any> = { coo: 'waves', gf: 'sphere', hoo: 'stream', plant: 'rings', consulting: 'stream', coaching: 'sphere', further: 'rings', allinone: 'sphere', about: 'waves', services: 'waves', faq: 'rings', partner: 'sphere', video: 'waves', contact: 'waves' };
+
+let c: any, crumbs: any[] = [], jsonld: any[] = [];
+const site = Astro.site!.toString().replace(/\/$/, '');
+if (kind === 'page' && page) {
+  c = page[lang];
+  const isService = page.template === 'service';
+  crumbs = isService ? [{ label: t.nav.services, href: r('services', lang) }, { label: c.navTitle }] : [{ label: c.navTitle }];
+  jsonld.push({
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [{ name: t.home, url: site + r('home', lang) }, ...(isService ? [{ name: t.nav.services, url: site + r('services', lang) }] : []), { name: c.navTitle, url: site + c.slug }]
+      .map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: x.url })),
+  });
+  if (isService) jsonld.push({ '@context': 'https://schema.org', '@type': 'Service', name: c.title + (c.titleAccent ? ' ' + c.titleAccent : ''), description: c.seoDescription, provider: { '@id': site + '/#organization' }, areaServed: ['DE', 'AT', 'CH'], url: site + c.slug });
+  if (page.template === 'faq') {
+    const qa = c.sections.filter((b: any) => b.type === 'faq').flatMap((b: any) => b.items);
+    jsonld.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map((q: any) => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: q.a.replace(/\*\*|\[|\]\([^)]*\)/g, '') } })) });
+  }
+}
+const related = post ? posts.filter((p) => p.slug !== post.slug).slice(0, 3) : [];
+if (post) {
+  jsonld.push({
+    '@context': 'https://schema.org', '@type': 'BlogPosting', headline: post.data.title, description: post.data.description,
+    datePublished: post.data.date, dateModified: post.data.updated, inLanguage: 'de-DE',
+    image: post.data.cover ? site + post.data.cover : undefined, mainEntityOfPage: site + '/' + post.slug + '/',
+    author: { '@id': site + '/#danny-graf' }, publisher: { '@id': site + '/#organization' },
+  });
+}
+const Content = post?.Content;
+---
+{kind === 'page' && page && (
+  <Base lang={lang} title={c.seoTitle} description={c.seoDescription} alt={{ de: page.de.slug, en: page.en.slug }} noindex={!!c.noindex} jsonld={jsonld}>
+    <PageHero lang={lang} eyebrow={c.eyebrow} title={c.title} accent={c.titleAccent} intro={c.intro} chips={c.highlights} crumbs={crumbs}
+      viz={page.template === 'legal' ? false : vizFor[page.id] ?? 'waves'} cta={page.template === 'service'} slim={page.template === 'legal'} />
+
+    {page.template === 'contact' ? (
+      <div class="wrap cpage">
+        <div class="cl">
+          <div class="cinfo rv">
+            <a href={contact.phoneHref}><span>{contact.phone}</span><span class="mono">{t.phone}</span></a>
+            <a href={`mailto:${contact.email}`}><span>{contact.email}</span><span class="mono">{t.email}</span></a>
+            <a href={contact.linkedin} target="_blank" rel="noopener"><span>Danny Graf, MBA</span><span class="mono">LinkedIn ↗</span></a>
+            <div><span>{contact.street}, {contact.zip} {contact.city}</span><span class="mono">{t.address}</span></div>
+          </div>
+          {c.sections.filter((b: any) => b.type === 'steps').map((b: any) => (
+            <div class="b-steps">{b.items.map((s: any, i: number) => <article class="b-step rv" style={`--d:${i * 100}ms`}><span class="n">{String(i + 1).padStart(2, '0')}</span><h3>{s.title}</h3><p>{s.text}</p></article>)}</div>
+          ))}
+        </div>
+        <div class="cr rv"><ContactForm lang={lang} id="cpf" /></div>
+      </div>
+    ) : (
+      <div class:list={['blocks', { 'faq-page': page.template === 'faq' }]}><Blocks lang={lang} blocks={c.sections} /></div>
+    )}
+  </Base>
+)}
+
+{kind === 'post' && post && (
+  <Base lang="de" title={`${post.data.title} | Graf Interim`} description={post.data.description} alt={{ de: `/${post.slug}/`, en: routes.blog.en }} image={post.data.cover || undefined} jsonld={jsonld} ogType="article">
+    <PageHero lang="de" eyebrow={post.data.category === 'Allgemein' ? 'Insights' : post.data.category} title={post.data.title} crumbs={[{ label: 'Blog', href: '/blog/' }, { label: post.data.title.length > 48 ? post.data.title.slice(0, 46) + '…' : post.data.title }]} viz={false}>
+      <div class="art-meta mono rv"><span>{t.blog.published} <b>{fmtDate(post.data.date, 'de')}</b></span><span><b>{post.data.readingTime}</b> {t.blog.min}</span><span>Danny Graf, MBA</span></div>
+    </PageHero>
+    {post.data.cover && <div class="art-cover clip"><img src={post.data.cover} alt="" width={post.data.coverWidth} height={post.data.coverHeight} fetchpriority="high" /></div>}
+    <div class="art-wrap">
+      <article class="article"><Content /></article>
+      <div class="art-author rv"><div>
+        <img src="/images/about-portrait.webp" alt="Danny Graf" width="88" height="88" loading="lazy" />
+        <div><b>Danny Graf, MBA</b><p>Interim COO & Werksleiter · Lean Six Sigma Black Belt. 30+ Jahre Führungserfahrung in produzierenden Unternehmen. <a href="/ueber-mich/">Mehr über mich →</a></p></div>
+      </div></div>
+      <CtaBand lang="de" heading="Sie erkennen Ihr Unternehmen wieder?" text="Lassen Sie uns vertraulich über Ihre Situation sprechen – unverbindlich und auf Augenhöhe." />
+    </div>
+    <section class="related">
+      <div class="wrap">
+        <div class="head"><div class="tag mono rv">{t.blog.related}</div><h2 class="h2 rv" style="grid-column:1/9">Weitere <span class="sf gold">Beiträge.</span></h2><div class="side rv"><a class="tlink" href="/blog/">{t.blog.all} →</a></div></div>
+        <div class="bl-grid">{related.map((p) => <BlogCard post={p} lang="de" />)}</div>
+      </div>
+    </section>
+  </Base>
+)}

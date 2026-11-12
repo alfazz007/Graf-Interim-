@@ -1,0 +1,152 @@
+{
+  "id": "gf",
+  "template": "service",
+  "de": {
+    "slug": "/interim-geschaeftsfuehrer/",
+    "navTitle": "Interim Geschäftsführer",
+    "seoTitle": "Interim Geschäftsführer für Maschinenbau | Graf Interim",
+    "seoDescription": "Interim Geschäftsführung für Maschinenbau und produzierendes Gewerbe: als Vakanzüberbrückung oder in schwierigen Lagen – ich bringe Ihr Unternehmen auf Kurs.",
+    "eyebrow": "Leistung · Geschäftsführung",
+    "title": "Interim Geschäftsführer",
+    "titleAccent": "für Maschinenbau & produzierendes Gewerbe",
+    "intro": "Ich vertrete Ihre unternehmerischen Interessen befristet nach innen und außen – als Vakanzüberbrückung oder in einer besonders schwierigen Situation – und bringe Ihr Unternehmen wieder auf Kurs.",
+    "highlights": ["Moderne Prozesse", "Liquidität", "Lieferperformance", "Führungskräfte", "Schlanke Organisation"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "Ich bringe Ihr Unternehmen wieder auf Kurs",
+        "body": [
+          "**Die wirtschaftliche Lage ist schwierig? Wettbewerbsdruck und Kundenanforderungen steigen? Der Rohertrag ist zu gering, die Kosten sind zu hoch?**",
+          "In vielen Unternehmen sind Mängel in den Abläufen und fehlende Methodenkompetenz die Ursache dafür, dass die Kosten stagnieren oder sogar steigen – womöglich bei sinkendem Umsatz. Mit gezielten Maßnahmen auf Basis einer fundierten Analyse kehren wir diese Entwicklung um, verbessern Ihre Position am Markt nachhaltig und optimieren Ihre Organisation."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Das erreichen Sie mit meiner Beauftragung",
+        "intro": "Je nach Aufgabenstellung unterstütze ich Sie auch gemeinsam mit langjährig erfahrenen Kollegen aus meinem Team.",
+        "items": [
+          "Moderne, schlanke Prozesse",
+          "Auswahl und Coaching Ihrer Führungskräfte",
+          "Optimierte Bestände und steigende Liquidität",
+          "Eine verschlankte Organisationsstruktur",
+          "Eine optimierte Fertigungs- und Mitarbeiter-Kapazitätsplanung",
+          "Eine niedrigere Fehlerquote – auch seitens der Lieferanten",
+          "Eine höhere Lieferperformance",
+          "Verbesserte Lieferantenbewertungen",
+          "Niedrigere Werkzeug- und Lohnkosten"
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "Warum ein Interim Geschäftsführer?",
+        "items": [
+          { "title": "Ohne Unterbrechung handlungsfähig", "text": "Ihre unternehmerischen Interessen bleiben ohne jede Unterbrechung gewahrt – die Handlungsfähigkeit des Unternehmens ist gesichert." },
+          { "title": "Entscheidungen durchsetzen", "text": "In der Position des Entscheidungsträgers kann ich die entscheidenden Maßnahmen implementieren und nachhaltig durchsetzen." },
+          { "title": "Wettbewerbsfähigkeit sichern", "text": "Wir sichern Ihre Wettbewerbsfähigkeit, verkürzen den Abstand zum Wettbewerb und richten den Fokus darauf, Ihre Marktführerschaft zurückzugewinnen oder auszubauen." },
+          { "title": "Ein Plan für Ihre Ziele", "text": "Sie sagen mir, wo Ihre größten Herausforderungen liegen und welche Ziele Sie verfolgen. Ich entwickle die passenden Maßnahmen und Strategien und zeige Ihnen, wie wir sie erreichen." }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "Die Säulen unseres Erfolgs",
+        "intro": "Als Interim Geschäftsführer setze ich für eine begrenzte Zeit meine gesamte Erfahrung – auch aus früheren Einsätzen bei Weltmarktführern – ausschließlich für Ihr Unternehmen ein und stelle das gesamte Unternehmen auf den Prüfstand.",
+        "items": [
+          "Moderne, schlanke Prozesse und **Digitalisierung**",
+          "**Digital Leadership** und zeitgemäße Führung",
+          "Entwicklung und **Coaching Ihrer Führungskräfte**",
+          "Optimierung der gesamten **Supply Chain**",
+          "Ein zukunftsweisendes **Sales and Operations Planning**",
+          "Eine **schlanke Organisationsstruktur** – hier liegen oft große, ungenutzte Potenziale",
+          "Konsequente **Reduzierung von Verschwendung** zur nachhaltigen Kostensenkung"
+        ]
+      },
+      {
+        "type": "stats"
+      },
+      {
+        "type": "quote",
+        "text": "Was Sie aus der Vergangenheit bis hierhin gebracht hat, reicht nicht aus, um künftig am Markt zu bestehen. Selbst einstige Weltmarktführer fallen zurück, wenn sie sich nicht entwickeln.",
+        "cite": "Danny Graf, MBA"
+      },
+      {
+        "type": "cta",
+        "heading": "Interesse an einer Interim Geschäftsführung?",
+        "text": "Lassen Sie uns gemeinsam analysieren, wo Ihre größten Herausforderungen und die wirksamsten Ansatzpunkte liegen. Im Gespräch stecken wir den Rahmen meines Einsatzes ab und definieren die Ziele."
+      }
+    ]
+  },
+  "en": {
+    "slug": "/en/interim-managing-director/",
+    "navTitle": "Interim Managing Director",
+    "seoTitle": "Interim Managing Director for Manufacturing | Graf Interim",
+    "seoDescription": "Interim managing director for mechanical engineering and manufacturing – bridging a vacancy or steering through a difficult situation to get you back on course.",
+    "eyebrow": "Service · Management",
+    "title": "Interim Managing Director",
+    "titleAccent": "for mechanical engineering & manufacturing",
+    "intro": "I represent your business interests internally and externally for a fixed term – to bridge a vacancy or in a particularly difficult situation – and get your company back on course.",
+    "highlights": ["Modern processes", "Liquidity", "Delivery performance", "Leadership team", "Lean organisation"],
+    "sections": [
+      {
+        "type": "text",
+        "heading": "I get your company back on course",
+        "body": [
+          "**Is your company in a difficult economic position? Are competitive pressure and customer demands rising? Is your gross margin too low and your cost base too high?**",
+          "In many companies, weak processes and a lack of methodological expertise are the reason why costs stagnate or even rise – sometimes while revenue falls. With targeted measures based on a thorough analysis, we reverse this trend, strengthen your market position for the long term and optimise your organisation."
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "What you gain by engaging me",
+        "intro": "Depending on the task, I can also support you together with long-standing, experienced colleagues from my team.",
+        "items": [
+          "Modern, lean processes",
+          "Selection and coaching of your managers",
+          "Optimised inventories and improved liquidity",
+          "A leaner organisational structure",
+          "Optimised production and workforce capacity planning",
+          "Lower defect rates – including at your suppliers",
+          "Higher delivery performance",
+          "Better supplier ratings",
+          "Lower tooling and labour costs"
+        ]
+      },
+      {
+        "type": "cards",
+        "heading": "Why an interim managing director?",
+        "items": [
+          { "title": "No gap in leadership", "text": "Your business interests are safeguarded without interruption, and the company remains fully able to act." },
+          { "title": "Decisions that stick", "text": "As the decision-maker, I can implement the measures that matter and see them through for the long term." },
+          { "title": "Securing competitiveness", "text": "We secure your competitiveness, close the gap to your competitors and focus on regaining or extending your market leadership." },
+          { "title": "A plan for your goals", "text": "You tell me where your biggest challenges lie and what you want to achieve. I develop the right measures and strategies and show you how we will get there." }
+        ]
+      },
+      {
+        "type": "list",
+        "heading": "The pillars of our success",
+        "intro": "As interim managing director, I devote all my experience – including from previous assignments with world market leaders – exclusively to your company for a fixed period and put the entire business to the test.",
+        "items": [
+          "Modern, lean processes and **digitalisation**",
+          "**Digital leadership** and contemporary management",
+          "Developing and **coaching your managers**",
+          "Optimising the entire **supply chain**",
+          "Forward-looking **sales and operations planning**",
+          "A **lean organisational structure** – often a source of large untapped potential",
+          "Consistently **eliminating waste** to reduce costs for the long term"
+        ]
+      },
+      {
+        "type": "stats"
+      },
+      {
+        "type": "quote",
+        "text": "What got you here will not be enough to stay competitive in the future. Even former world market leaders fall behind if they stop developing.",
+        "cite": "Danny Graf, MBA"
+      },
+      {
+        "type": "cta",
+        "heading": "Interested in interim management at the top?",
+        "text": "Let's work out together where your biggest challenges and the most effective levers lie. In a first conversation we will define the scope and goals of my assignment."
+      }
+    ]
+  }
+}
